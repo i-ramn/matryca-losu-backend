@@ -30,4 +30,9 @@ export class ArticlesController {
   getDocumentById(@Param('folderId') folderId: string) {
     return this.googleDriveService.listFilesInFolder(folderId);
   }
+
+  @Get('read/:fileId')
+  readDocumentById(@Param('fileId') folderId: string) {
+    return this.googleDriveService.readGoogleDocContent(folderId);
+  }
 }
