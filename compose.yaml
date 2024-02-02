@@ -14,7 +14,7 @@ services:
     build:
       context:  .
       dockerfile: Dockerfile
-    container_name: matryca-lyosu-backend
+    container_name: matryca-losu-backend
     env_file:
       - .development.env
     ports:
