@@ -70,7 +70,7 @@ export const calculatedDates = (day: number, month: number, year: number) => {
   const seventy = computeSum(sixtyEight + fourth);
   const seventyOne = computeSum(sixtyNine + eight);
   const seventyTwo = computeSum(sixtyNine + sixtyEight);
-  const seventyThree = computeSum(sixtyNine + seventy);
+  const seventyThree = computeSum(sixtyEight + seventy);
   const seventyFour = computeSum(seventy + fourth);
   const seventyFive = computeSum(fourth + nine);
   const seventySix = computeSum(seventyFive + year);
