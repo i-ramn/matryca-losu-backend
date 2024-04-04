@@ -1,4 +1,4 @@
-import { Controller, Get, Redirect, Query, Res, Param } from '@nestjs/common';
+import { Controller, Get, Redirect, Query, Res } from '@nestjs/common';
 import { Response } from 'express';
 import { ArticlesService } from './articles.service';
 import { TokenService } from './token.service';
@@ -26,13 +26,13 @@ export class ArticlesController {
     res.send('success');
   }
 
-  @Get('/:folderId')
-  getDocumentById(@Param('folderId') folderId: string) {
-    return this.googleDriveService.listFilesInFolder(folderId);
-  }
+  // @Get('/:folderId')
+  // async getDocumentById(@Param('folderId') folderId: string) {
+  //   await this.googleDriveService.generateObjectFromFolders(folderId);
+  // }
 
-  @Get('read/:fileId')
-  readDocumentById(@Param('fileId') folderId: string) {
-    return this.googleDriveService.readGoogleDocContent(folderId);
+  @Get('read')
+  async readDocumentById() {
+    await this.googleDriveService.generateAndSavePdfFromJson();
   }
 }
