@@ -7,6 +7,6 @@ export class CalculatorController {
 
   @Get('/:date')
   calculator(@Param('date') date: string) {
-    return this.calculateService.calculate(date);
+    return this.calculateService.fillHtmlTemplateWithDataFromDatabase(date);
   }
 }

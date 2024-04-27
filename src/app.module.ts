@@ -5,11 +5,12 @@ import { AppService } from './app.service';
 import { SequelizeModule } from '@nestjs/sequelize';
 import { ArticlesModule } from './articles/articles.module';
 import { ConfigModule } from '@nestjs/config';
+import { Articles } from './articles/articles.model';
 
 @Module({
   imports: [
     ConfigModule.forRoot({
-      envFilePath: `.${process.env.NODE_ENV}.env`,
+      envFilePath: '.env',
     }),
     SequelizeModule.forRoot({
       dialect: 'postgres',
@@ -17,9 +18,10 @@ import { ConfigModule } from '@nestjs/config';
       port: Number(process.env.POSTGRES_PORT),
       username: process.env.POSTGRES_USER,
       password: process.env.POSTGRES_PASSWORD,
-      database: process.env.POSTGRES_DB,
+      database: process.env.POSTGRES_DATABASE,
       synchronize: true,
-      models: [],
+      autoLoadModels: true,
+      models: [Articles],
     }),
     CalculatorModule,
     ArticlesModule,

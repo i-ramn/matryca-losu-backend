@@ -33,6 +33,6 @@ export class ArticlesController {
 
   @Get('read')
   async readDocumentById() {
-    await this.googleDriveService.generateAndSavePdfFromJson();
+    return await this.googleDriveService.saveDataFromJson();
   }
 }

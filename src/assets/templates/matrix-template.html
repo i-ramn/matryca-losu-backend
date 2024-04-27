@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<style>
+    html {
+        font-family: Arial, sans-serif
+    }
+    .year {
+        font-size: 10px;
+        width: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  .num {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif
+  }
+  .container {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: center;
+      position: relative;
+      margin-top: -35px;
+  }
+  .image {
+      width: 80%;
+  }
+  .a {
+      left: 13.7%;
+      top: 45%;
+      font-size: 20px;
+      color: white;
+      width: 45px;
+      height: 45px;
+  }
+  .a1 {
+      left: 21%;
+      top: 46.2%;
+      font-size: 15px;
+      color: white;
+      width: 32px;
+      height: 32px;
+  }
+  .a2 {
+      left: 26.3%;
+      top: 47.2%;
+      font-size: 12px;
+      color: white;
+      width: 22px;
+      height: 23px;
+  }
+  .a3 {
+      left: 34%;
+      top: 47%;
+      font-size: 12px;
+      color: white;
+      width: 22px;
+      height: 23px;
+  }
+  .b {
+      left: 46.4%;
+      top: 5%;
+      font-size: 20px;
+      color: white;
+      width: 45px;
+      height: 45px;
+  }
+  .b1 {
+      left: 47.4%;
+      top: 14%;
+      font-size: 15px;
+      color: white;
+      width: 32px;
+      height: 32px;
+  }
+  .b2 {
+      left: 48.2%;
+      top: 20.2%;
+      font-size: 12px;
+      color: white;
+      width: 22px;
+      height: 23px;
+  }
+  .b3 {
+      left: 48.2%;
+      top: 29.7%;
+      font-size: 12px;
+      color: white;
+      width: 22px;
+      height: 23px;
+  }
+  .c {
+      right: 13.9%;
+      top: 45%;
+      font-size: 20px;
+      color: white;
+      width: 45px;
+      height: 45px;
+  }
+  .c1 {
+      right: 21%;
+      top: 46.2%;
+      font-size: 15px;
+      color: black;
+      width: 32px;
+      height: 32px;
+  }
+  .c2 {
+      right: 26.3%;
+      top: 47.2%;
+      font-size: 12px;
+      color: white;
+      width: 22px;
+      height: 23px;
+  }
+  .d {
+      left: 46.4%;
+      bottom: 6.7%;
+      font-size: 20px;
+      color: white;
+      width: 45px;
+      height: 45px;
+  }
+  .d1 {
+      left: 47.4%;
+      bottom: 15.5%;
+      font-size: 15px;
+      color: black;
+      width: 32px;
+      height: 32px;
+  }
+  .d2 {
+      left: 48.2%;
+      bottom: 21.5%;
+      font-size: 12px;
+      color: white;
+      width: 22px;
+      height: 23px;
+  }
+  .e {
+      color: white;
+      width: 45px;
+      height: 45px;
+      font-size: 20px;
+      top: 45%;
+      left: 46.4%;
+  }
+  .e1 {
+      top: 46.3%;
+      left: 53.6%;
+      font-size: 15px;
+      color: black;
+      width: 32px;
+      height: 32px;
+  }
+  .e2 {
+
+      right: 37.8%;
+      top: 47.2%;
+      font-size: 12px;
+      color: black;
+      width: 22px;
+      height: 23px;
+  }
+  .f {
+      left: 23.5%;
+      top: 17%;
+      font-size: 20px;
+      color: black;
+      width: 45px;
+      height: 45px;
+  }
+  .f1 {
+      left: 29%;
+      top: 23.4%;
+      font-size: 15px;
+      color: black;
+      width: 32px;
+      height: 32px;
+  }
+  .f2 {
+      left: 32.8%;
+      top: 28%;
+      font-size: 12px;
+      color: black;
+      width: 22px;
+      height: 23px;
+  }
+  .g {
+      right: 23.5%;
+      top: 17%;
+      font-size: 20px;
+      color: black;
+      width: 45px;
+      height: 45px;
+  }
+  .g1 {
+      right: 29%;
+      top: 23.4%;
+      font-size: 15px;
+      color: black;
+      width: 32px;
+      height: 32px;
+  }
+  .g2 {
+      right: 32.8%;
+      top: 28%;
+      font-size: 12px;
+      color: black;
+      width: 22px;
+      height: 23px;
+  }
+  .h {
+      right: 23.5%;
+      bottom: 18%;
+      font-size: 20px;
+      color: black;
+      width: 45px;
+      height: 45px;
+  }
+  .h1 {
+      right: 29%;
+      bottom: 25%;
+      font-size: 15px;
+      color: black;
+      width: 32px;
+      height: 32px;
+  }
+  .h2 {
+      right: 32.8%;
+      bottom: 29.6%;
+      font-size: 12px;
+      color: black;
+      width: 22px;
+      height: 23px;
+  }
+  .i {
+      left: 23.5%;
+      bottom: 18%;
+      font-size: 20px;
+      color: black;
+      width: 45px;
+      height: 45px;
+  }
+  .i1 {
+      left: 29%;
+      bottom: 25%;
+      font-size: 15px;
+      color: black;
+      width: 32px;
+      height: 32px;
+  }
+  .i2 {
+      left: 32.8%;
+      bottom: 29.6%;
+      font-size: 12px;
+      color: black;
+      width: 22px;
+      height: 23px;
+  }
+  .x {
+      left: 59.3%;
+      bottom: 35%;
+      font-size: 12px;
+      color: black;
+      width: 22px;
+      height: 23px;
+  }
+  .x1 {
+      left: 53.8%;
+      bottom: 28.3%;
+      font-size: 12px;
+      color: black;
+      width: 22px;
+      height: 23px;
+  }
+  .x2 {
+      right: 31.9%;
+      bottom: 41.7%;
+      font-size: 12px;
+      color: black;
+      width: 22px;
+      height: 23px;
+  }
+  .ya {
+      left: 13%;
+      top: 42.4%;
+  }
+  .ya1 {
+      left: 14%;
+      top: 38.8%;
+  }
+  .ya2 {
+      left: 15.2%;
+      top: 35.7%;
+  }
+  .ya3 {
+      left: 16%;
+      top: 32.5%;
+      font-weight: bold;
+      font-size: 12px;
+  }
+  .ya4 {
+      left: 17.4%;
+      top: 29.2%;
+  }
+  .ya5 {
+      left: 18.5%;
+      top: 25.9%;
+  }
+  .ya6 {
+      left: 19.7%;
+      top: 22.7%;
+  }
+  .yf {
+      left: 28%;
+      top: 12%;
+  }
+  .yf1 {
+      left: 30.8%;
+      top: 10.9%;
+  }
+  .yf2 {
+      left: 33.3%;
+      top: 9.6%;
+  }
+  .yf3 {
+      left: 36%;
+      top: 7.5%;
+      font-size: 12px;
+      font-weight: bold;
+  }
+  .yf4 {
+      left: 38.8%;
+      top: 6.9%;
+  }
+  .yf5 {
+      left: 41.3%;
+      top: 5.8%;
+  }
+  .yf6 {
+      left: 44%;
+      top: 4.5%;
+  }
+  .yb {
+      right: 44.5%;
+      top: 4.5%;
+  }
+  .yb1 {
+      right: 41.8%;
+      top: 5.5%;
+  }
+  .yb2 {
+      right: 39.2%;
+      top: 7%;
+  }
+  .yb3 {
+      right: 36.3%;
+      top: 7.9%;
+      font-size: 12px;
+      font-weight: bold;
+  }
+  .yb4 {
+      right: 33.8%;
+      top: 9.6%;
+  }
+  .yb5 {
+      right: 31.3%;
+      top: 10.7%;
+  }
+  .yb6 {
+      right: 28.5%;
+      top: 12.3%;
+  }
+  .yg {
+      right: 19.7%;
+      top: 22.7%;
+  }
+  .yg1 {
+      right: 18.5%;
+      top: 25.9%;
+  }
+  .yg2 {
+      right: 17.4%;
+      top: 29.2%;
+  }
+  .yg3 {
+      right: 16%;
+      top: 32.5%;
+      font-weight: bold;
+      font-size: 12px;
+  }
+  .yg4 {
+      right: 15.2%;
+      top: 35.7%;
+  }
+  .yg5 {
+      right: 14%;
+      top: 38.8%;
+  }
+  .yg6 {
+      right: 13%;
+      top: 42.4%;
+  }
+  .yc {
+      right: 13%;
+      bottom: 43.4%;
+  }
+  .yc1 {
+      right: 14.2%;
+      bottom: 40%;
+  }
+  .yc2 {
+      right: 15.2%;
+      bottom: 37%;
+  }
+  .yc3 {
+      right: 16.3%;
+      bottom: 33.5%;
+      font-weight: bold;
+      font-size: 12px;
+  }
+  .yc4 {
+      right: 17.4%;
+      bottom: 30%;
+  }
+  .yc5 {
+      right: 18.5%;
+      bottom: 27%;
+  }
+  .yc6 {
+      right: 19.7%;
+      bottom: 23.7%;
+  }
+  .yh {
+      right: 28.5%;
+      bottom: 13.3%;
+  }
+  .yh1 {
+      right: 31%;
+      bottom: 12%;
+  }
+  .yh2 {
+      right: 33.6%;
+      bottom: 10.5%;
+  }
+  .yh3 {
+      right: 36.3%;
+      bottom: 8.7%;
+      font-size: 12px;
+      font-weight: bold;
+  }
+  .yh4 {
+      right: 38.7%;
+      bottom: 8%;
+  }
+  .yh5 {
+      right: 41.4%;
+      bottom: 6.7%;
+  }
+  .yh6 {
+      right: 44.3%;
+      bottom: 5.3%;
+  }
+  .yd {
+      left: 44.3%;
+      bottom: 5.3%;
+  }
+  .yd1 {
+      left: 41.4%;
+      bottom: 6.7%;
+  }
+  .yd2 {
+      left: 38.7%;
+      bottom: 8%;
+  }
+  .yd3 {
+      left: 36.3%;
+      bottom: 8.7%;
+      font-size: 12px;
+      font-weight: bold;
+  }
+  .yd4 {
+      left: 33.6%;
+      bottom: 10.5%;
+  }
+  .yd5 {
+      left: 31%;
+      bottom: 12%;
+  }
+  .yd6 {
+      left: 28.2%;
+      bottom: 13.3%;
+  }
+  .yi {
+      left: 19.7%;
+      bottom: 23.7%;
+  }
+  .yi1 {
+      left: 18.5%;
+      bottom: 27%;
+  }
+  .yi2 {
+      left: 17.4%;
+      bottom: 30%;
+  }
+  .yi3 {
+      left: 16.3%;
+      bottom: 33.5%;
+      font-weight: bold;
+      font-size: 12px;
+  }
+  .yi4 {
+      left: 15.2%;
+      bottom: 37%;
+  }
+  .yi5 {
+      left: 14.2%;
+      bottom: 40%;
+  }
+  .yi6 {
+      left: 13%;
+      bottom: 43.4%;
+  }
+  .chakra-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      width: 90%;
+  }
+  .chakras {
+      width: 50%;
+  }
+  .number-block {
+      border-radius: 10px;
+      width: 42px;
+      height: 100%;
+      background: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center
+  }
+  .color-block {
+      width: 25px;
+      height: 100%;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center
+  }
+  .data-back {
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      display: flex;
+      justify-content: space-between;
+  }
+  .chakra-title {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      padding-left: 10px
+  }
+  .chakra-line {
+      height: 40px;
+      display: flex
+  }
+  .programs {
+      width: 50%;
+      height: 100px;
+  }
+  .program-line {
+      height: 40px;
+      display: flex;
+  }
+  .program-title {
+      background: #f1f1f0;
+      height: 100%;
+      border-radius: 20px;
+      width: 60%;
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+      font-size: 10px;
+  }
+  .program-numbers {
+      width: 40%;
+      height: 100%;
+      border-radius: 20px;
+      display: flex;
+      background: #e4e5e4;
+      justify-content: center;
+      align-items: center;
+      gap: 8px
+  }
+  .rounded-num{
+      border-radius: 50px;
+      background: white;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+</style>
+<body>
+<div class="container">
+  <img class="image" src="{imageSrc}" alt="Matrix"/>
+<!--  <img class="image" src="../../public/images/matrix.svg" alt="Matrix"/>-->
+  <p class="a num">{a}</p>
+  <p class="a1 num">{a1}</p>
+  <p class="a2 num">{a2}</p>
+  <p class="a3 num">{a3}</p>
+  <p class="b num">{b}</p>
+  <p class="b1 num">{b1}</p>
+  <p class="b2 num">{b2}</p>
+  <p class="b3 num">{b3}</p>
+  <p class="c num">{c}</p>
+  <p class="c1 num">{c1}</p>
+  <p class="c2 num">{c2}</p>
+  <p class="d num">{d}</p>
+  <p class="d1 num">{d1}</p>
+  <p class="d2 num">{d2}</p>
+  <p class="e num">{e}</p>
+  <p class="e1 num">{e1}</p>
+  <p class="e2 num">{e2}</p>
+  <p class="f num">{f}</p>
+  <p class="f1 num">{f1}</p>
+  <p class="f2 num">{f2}</p>
+  <p class="g num">{g}</p>
+  <p class="g1 num">{g1}</p>
+  <p class="g2 num">{g2}</p>
+  <p class="h num">{h}</p>
+  <p class="h1 num">{h1}</p>
+  <p class="h2 num">{h2}</p>
+  <p class="i num">{i}</p>
+  <p class="i1 num">{i1}</p>
+  <p class="i2 num">{i2}</p>
+  <p class="x num">{x}</p>
+  <p class="x1 num">{x1}</p>
+  <p class="x2 num">{x2}</p>
+  <p class="ya num year">{ya}</p>
+  <p class="ya1 num year">{ya1}</p>
+  <p class="ya2 num year">{ya2}</p>
+  <p class="ya3 num year">{ya3}</p>
+  <p class="ya4 num year">{ya4}</p>
+  <p class="ya5 num year">{ya5}</p>
+  <p class="ya6 num year">{ya6}</p>
+  <p class="yf num year">{yf}</p>
+  <p class="yf1 num year">{yf1}</p>
+  <p class="yf2 num year">{yf2}</p>
+  <p class="yf3 num year">{yf3}</p>
+  <p class="yf4 num year">{yf4}</p>
+  <p class="yf5 num year">{yf5}</p>
+  <p class="yf6 num year">{yf6}</p>
+  <p class="yb num year">{yb}</p>
+  <p class="yb1 num year">{yb1}</p>
+  <p class="yb2 num year">{yb2}</p>
+  <p class="yb3 num year">{yb3}</p>
+  <p class="yb4 num year">{yb4}</p>
+  <p class="yb5 num year">{yb5}</p>
+  <p class="yb6 num year">{yb6}</p>
+  <p class="yg num year">{yg}</p>
+  <p class="yg1 num year">{yg1}</p>
+  <p class="yg2 num year">{yg2}</p>
+  <p class="yg3 num year">{yg3}</p>
+  <p class="yg4 num year">{yg4}</p>
+  <p class="yg5 num year">{yg5}</p>
+  <p class="yg6 num year">{yg6}</p>
+  <p class="yc num year">{yc}</p>
+  <p class="yc1 num year">{yc1}</p>
+  <p class="yc2 num year">{yc2}</p>
+  <p class="yc3 num year">{yc3}</p>
+  <p class="yc4 num year">{yc4}</p>
+  <p class="yc5 num year">{yc5}</p>
+  <p class="yc6 num year">{yc6}</p>
+  <p class="yh num year">{yh}</p>
+  <p class="yh1 num year">{yh1}</p>
+  <p class="yh2 num year">{yh2}</p>
+  <p class="yh3 num year">{yh3}</p>
+  <p class="yh4 num year">{yh4}</p>
+  <p class="yh5 num year">{yh5}</p>
+  <p class="yh6 num year">{yh6}</p>
+  <p class="yd num year">{yd}</p>
+  <p class="yd1 num year">{yd1}</p>
+  <p class="yd2 num year">{yd2}</p>
+  <p class="yd3 num year">{yd3}</p>
+  <p class="yd4 num year">{yd4}</p>
+  <p class="yd5 num year">{yd5}</p>
+  <p class="yd6 num year">{yd6}</p>
+  <p class="yi num year">{yi}</p>
+  <p class="yi1 num year">{yi1}</p>
+  <p class="yi2 num year">{yi2}</p>
+  <p class="yi3 num year">{yi3}</p>
+  <p class="yi4 num year">{yi4}</p>
+  <p class="yi5 num year">{yi5}</p>
+  <p class="yi6 num year">{yi6}</p>
+</div>
+<div class="chakra-container">
+  <div class="chakras">
+    <div class="chakra-line">
+      <div class="color-block" style="background: #cccccb;">
+      </div>
+      <div class="data-back" style="background: #e4e5e4">
+        <div class="chakra-title" style="font-size: 10px">
+          Nazwa czakry
+        </div>
+        <div style="display: flex; flex-direction: row">
+          <div class="number-block" style="font-size: 10px">Fizyka</div>
+          <div class="number-block" style="font-size: 10px">Energia</div>
+          <div class="number-block" style="font-size: 10px">Emocja</div>
+        </div>
+      </div>
+    </div>
+    <div class="chakra-line">
+      <div class="color-block" style="background: #7d458f;">
+      </div>
+      <div class="data-back" style="background: #f1f1f0">
+        <div class="chakra-title" style="font-size: 10px">
+          SAHASRARA
+        </div>
+        <div style="display: flex; flex-direction: row">
+          <div class="number-block" style="font-size: 15px; background: #f8f8f8">{ca}</div>
+          <div class="number-block" style="font-size: 15px; background: #f8f8f8">{ca1}</div>
+          <div class="number-block" style="font-size: 15px; background: #f8f8f8">{ca2}</div>
+        </div>
+      </div>
+    </div>
+    <div class="chakra-line">
+      <div class="color-block" style="background: #4e66ad;">
+      </div>
+      <div class="data-back" style="background: #e4e5e4">
+        <div class="chakra-title" style="font-size: 10px">
+          AJNA
+        </div>
+        <div style="display: flex; flex-direction: row">
+          <div class="number-block" style="font-size: 15px;">{cb}</div>
+          <div class="number-block" style="font-size: 15px;">{cb1}</div>
+          <div class="number-block" style="font-size: 15px;">{cb2}</div>
+        </div>
+      </div>
+    </div>
+    <div class="chakra-line">
+      <div class="color-block" style="background: #59c2d7">
+      </div>
+      <div class="data-back" style="background: #f1f1f0">
+        <div class="chakra-title" style="font-size: 10px">
+          WISZUDHA
+        </div>
+        <div style="display: flex; flex-direction: row">
+          <div class="number-block" style="font-size: 15px; background: #f8f8f8">{cc}</div>
+          <div class="number-block" style="font-size: 15px; background: #f8f8f8">{cc1}</div>
+          <div class="number-block" style="font-size: 15px; background: #f8f8f8">{cc2}</div>
+        </div>
+      </div>
+    </div>
+    <div class="chakra-line">
+      <div class="color-block" style="background: #afce65">
+      </div>
+      <div class="data-back" style="background: #e4e5e4">
+        <div class="chakra-title" style="font-size: 10px">
+          ANAHATA
+        </div>
+        <div style="display: flex; flex-direction: row">
+          <div class="number-block" style="font-size: 15px;">{cd}</div>
+          <div class="number-block" style="font-size: 15px;">{cd1}</div>
+          <div class="number-block" style="font-size: 15px;">{cd2}</div>
+        </div>
+      </div>
+    </div>
+    <div class="chakra-line">
+      <div class="color-block" style="background: #f9ed4b">
+      </div>
+      <div class="data-back" style="background: #f1f1f0">
+        <div class="chakra-title" style="font-size: 10px">
+          MANIPURA
+        </div>
+        <div style="display: flex; flex-direction: row">
+          <div class="number-block" style="font-size: 15px; background: #f8f8f8">{ce}</div>
+          <div class="number-block" style="font-size: 15px; background: #f8f8f8">{ce1}</div>
+          <div class="number-block" style="font-size: 15px; background: #f8f8f8">{ce2}</div>
+        </div>
+      </div>
+    </div>
+    <div class="chakra-line">
+      <div class="color-block" style="background: #f8ac36">
+      </div>
+      <div class="data-back" style="background: #e4e5e4">
+        <div class="chakra-title" style="font-size: 10px">
+          SWADHISTHANA
+        </div>
+        <div style="display: flex; flex-direction: row">
+          <div class="number-block" style="font-size: 15px;">{cf1}</div>
+          <div class="number-block" style="font-size: 15px;">{cf}</div>
+          <div class="number-block" style="font-size: 15px;">{cf2}</div>
+        </div>
+      </div>
+    </div>
+    <div class="chakra-line">
+      <div class="color-block" style="background: #e94343">
+      </div>
+      <div class="data-back" style="background: #f1f1f0">
+        <div class="chakra-title" style="font-size: 10px">
+          MULADHARA
+        </div>
+        <div style="display: flex; flex-direction: row">
+          <div class="number-block" style="font-size: 15px; background: #f8f8f8">{cg1}</div>
+          <div class="number-block" style="font-size: 15px; background: #f8f8f8">{cg}</div>
+          <div class="number-block" style="font-size: 15px; background: #f8f8f8">{cg2}</div>
+        </div>
+      </div>
+    </div>
+    <div class="chakra-line">
+      <div class="color-block" style="background: #cccccb;">
+      </div>
+      <div class="data-back" style="background: #e4e5e4">
+        <div class="chakra-title" style="font-size: 10px">
+          Ogólny układ systemów
+        </div>
+        <div style="display: flex; flex-direction: row">
+          <div class="number-block" style="font-size: 15px">{ch}</div>
+          <div class="number-block" style="font-size: 15px">{ch1}</div>
+          <div class="number-block" style="font-size: 15px">{ch2}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="programs">
+    <div class="program-line">
+      <div class="program-title">
+        Programy rodu linii męskiej
+      </div>
+      <div class="program-numbers">
+        <div class="rounded-num">{pa}</div>
+        <div class="rounded-num">{pa1}</div>
+        <div class="rounded-num">{pa2}</div>
+      </div>
+    </div>
+    <div class="program-line">
+      <div class="program-title">
+        Programy rodu linii żeńskiej
+      </div>
+      <div class="program-numbers">
+        <div class="rounded-num">{pb}</div>
+        <div class="rounded-num">{pb1}</div>
+        <div class="rounded-num">{pb2}</div>
+      </div>
+    </div>
+    <div class="program-line" style="height: 80px">
+      <div class="program-title" style="border-radius: 30px">
+        Osobiste przeznaczenie
+      </div>
+      <div class="program-numbers" style="border-radius: 30px">
+        <div style="display: flex; flex-direction: column; gap: 10px">
+          <div class="rounded-num">{pc}</div>
+          <div class="rounded-num">{pc1}</div>
+        </div>
+        <div style="display: flex">
+          <div style="width: 10px; height: 30px; border: 1px solid black; border-left: none"></div>
+          <div style="height: 30px">
+            <div style="height: 15px; border-bottom: 1px solid black; width: 10px;"></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="rounded-num">{pc2}</div>
+      </div>
+    </div>
+    <div class="program-line" style="height: 80px">
+      <div class="program-title" style="border-radius: 30px">
+        Socjalne przeznaczenie
+      </div>
+      <div class="program-numbers" style="border-radius: 30px">
+        <div style="display: flex; flex-direction: column; gap: 10px">
+          <div class="rounded-num">{pd}</div>
+          <div class="rounded-num">{pd1}</div>
+        </div>
+        <div style="display: flex">
+          <div style="width: 10px; height: 30px; border: 1px solid black; border-left: none"></div>
+          <div style="height: 30px">
+            <div style="height: 15px; border-bottom: 1px solid black; width: 10px;"></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="rounded-num">{pd2}</div>
+      </div>
+    </div>
+    <div class="program-line" style="height: 80px">
+      <div class="program-title" style="border-radius: 30px">
+        Duchowe przeznaczenie
+      </div>
+      <div class="program-numbers" style="border-radius: 30px">
+        <div class="rounded-num">{pe2}</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+

@@ -30,6 +30,7 @@ export const calculatedDates = (day: number, month: number, year: number) => {
   const thirty = computeSum(twenty + five);
   const thirtyOne = computeSum(thirteen + five);
   const thirtyTwo = computeSum(five + ten);
+  /////////////////////////////////////////
   const thirtyThree = computeSum(day + six);
   const thirtyFour = computeSum(thirtyThree + day);
   const thirtyFive = computeSum(thirtyThree + six);
@@ -73,7 +74,7 @@ export const calculatedDates = (day: number, month: number, year: number) => {
   const seventyThree = computeSum(sixtyEight + seventy);
   const seventyFour = computeSum(seventy + fourth);
   const seventyFive = computeSum(fourth + nine);
-  const seventySix = computeSum(seventyFive + year);
+  const seventySix = computeSum(seventyFive + fourth);
   const seventySeven = computeSum(seventyFive + nine);
   const seventyEight = computeSum(seventySix + fourth);
   const seventyNine = computeSum(seventyFive + seventySix);
@@ -95,18 +96,18 @@ export const calculatedDates = (day: number, month: number, year: number) => {
   const ninetyFive = computeSum(ninetyThree + ninetyFour);
   const ninetySix = computeSum(day + month);
   const ninetySeven = computeSum(twentyOne + fourteen);
-  const ninetyEight = computeSum(twenty + fourteen);
+  const ninetyEight = computeSum(twenty + thirteen);
   const ninetyNine = computeSum(thirty + thirtyOne);
   const hundred = computeSum(five + five);
   const hundredOne = computeSum(eleven + fifteen);
   const hundredTwo = computeSum(fourth + year);
-  //1+21+20+30+5+11+4
+  //1+21+20+30+5+15+3
   const hundredThree = computeSum(
-    day + twentyOne + twenty + thirty + five + eleven + fourth,
+    day + twentyOne + twenty + thirty + five + fifteen + year,
   );
-  //2+14+13+31+5+15+3
+  //2+14+13+31+5+11+4
   const hundredFour = computeSum(
-    month + fourteen + thirteen + thirtyOne + five + fifteen + year,
+    month + fourteen + thirteen + thirtyOne + five + eleven + fourth,
   );
   //96+97+98+99+100+101+102
   const hundredFive = computeSum(
@@ -117,6 +118,113 @@ export const calculatedDates = (day: number, month: number, year: number) => {
       hundred +
       hundredOne +
       hundredTwo,
+  );
+
+  const hundredSix = computeSum(
+    day +
+      month +
+      year +
+      fourth +
+      five +
+      six +
+      seven +
+      eight +
+      nine +
+      ten +
+      eleven +
+      twelve +
+      thirteen +
+      fourteen +
+      fifteen +
+      sixteen +
+      seventeen +
+      eighteen +
+      nineteen +
+      twenty +
+      twentyOne +
+      twentyTwo +
+      twentyThree +
+      twentyFour +
+      twentyFive +
+      twentySix +
+      twentySeven +
+      twentyEight +
+      twentyNine +
+      thirty +
+      thirtyOne +
+      thirtyTwo +
+      thirtyThree +
+      thirtyFour +
+      thirtyFive +
+      thirtySix +
+      thirtySeven +
+      thirtyEight +
+      thirtyNine +
+      forty +
+      fortyOne +
+      fortyTwo +
+      fortyThree +
+      fortyFour +
+      fortyFive +
+      fortySix +
+      fortySeven +
+      fortyEight +
+      fortyNine +
+      fifty +
+      fiftyOne +
+      fiftyTwo +
+      fiftyThree +
+      fiftyFour +
+      fiftyFive +
+      fiftySix +
+      fiftySeven +
+      fiftyEight +
+      fiftyNine +
+      sixty +
+      sixtyOne +
+      sixtyTwo +
+      sixtyThree +
+      sixtyFour +
+      sixtyFive +
+      sixtySix +
+      sixtySeven +
+      sixtyEight +
+      sixtyNine +
+      seventy +
+      seventyOne +
+      seventyTwo +
+      seventyThree +
+      seventyFour +
+      seventyFive +
+      seventySix +
+      seventySeven +
+      seventyEight +
+      eighty +
+      eightyOne +
+      eightyTwo +
+      eightyThree +
+      eightyFour +
+      eightyFive +
+      eightySix +
+      eightySeven +
+      eightyEight +
+      eightyNine +
+      ninety +
+      ninetyOne +
+      ninetyTwo +
+      ninetyThree +
+      ninetyFour +
+      ninetyFive +
+      ninetySix +
+      ninetySeven +
+      ninetyEight +
+      ninetyNine +
+      hundred +
+      hundredOne +
+      hundredTwo +
+      hundredThree +
+      hundredFour +
+      hundredFive,
   );
 
   return {
@@ -248,5 +356,6 @@ export const calculatedDates = (day: number, month: number, year: number) => {
     pe1: ninetyFour,
     pe2: ninetyFive,
     pf: hundredFive,
+    ps: hundredSix,
   };
 };

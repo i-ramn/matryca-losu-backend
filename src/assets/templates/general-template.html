@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article Template</title>
+  <style>
+      .container {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+      }
+      .generalTile {
+          /*margin-top: -60px;*/
+      }
+      .number {
+          font-family: Arial, sans-serif;
+          font-size: 14px;
+          margin-bottom: 30px;
+      }
+      h1 {
+          font-family: Arial, sans-serif;
+          font-weight: bold;
+          font-size: 22px;
+      }
+      h2 {
+          font-family: Arial, sans-serif;
+          font-size: 16px;
+          font-weight: bold;
+      }
+      h3 {
+          font-family: Arial, sans-serif;
+          font-size: 16px;
+          font-weight: normal;
+          margin-bottom: 7px;
+      }
+      p {
+          margin-top: 0;
+      }
+      body {
+          margin-top: 0;
+      }
+      html {
+          font-size: 12px;
+      }
+  </style>
+</head>
+<body class="container">
+  {matrix}
+  <div>
+    <h1 class="generalTile">CECHY OSOBOWE</h1>
+    <h3>
+      WIZYTÓWKA
+    </h3>
+    <p class="number">({dayNumber})</p>
+    <p>{dayContent}</p>
+    <h3>
+      ŚWIADOMOŚĆ
+    </h3>
+    <p class="number">({monthNumber})</p>
+    <p>{monthContent}</p>
+    <h3>
+      CHARAKTER
+    </h3>
+    <p class="number">({characterNumber})</p>
+    <p>{characterContent}</p>
+  </div>
+
+  <div>
+    <h1>TALENTY</h1>
+    <h3>
+      ŹRÓDŁO ŻYCIOWEJ ENERGII
+    </h3>
+    <p class="number">({talentsNumber})</p>
+    <p>{talentsContent}</p>
+    <h3>
+      UKRYTE MOCE
+    </h3>
+    <p class="number">({hiddenNumber})</p>
+    <p>{hiddenContent}</p>
+    <h3>
+      UMIEJĘTNOŚCI I ZDOLNOŚCI Z PRZESZŁEGO ŻYCIA
+    </h3>
+    <p class="number">({skillsAndAbilitiesNumber})</p>
+    <p>{skillsAndAbilitiesContent}</p>
+  </div>
+
+  <div>
+    <h1>PRZEZNACZENIA</h1>
+    <h3>
+      OSOBISTE PRZEZNACZENIE (20 - 40 LAT)
+    </h3>
+    <p class="number">({personalDestinyNumber})</p>
+    <p>{personalDestinyContent}</p>
+    <h3>
+      SOCJALNE PRZEZNACZENIE (40 - 60 LAT)
+    </h3>
+    <p class="number">({socialDestinyNumber})</p>
+    <p>{socialDestinyContent}</p>
+    <h3>
+      DUCHOWE PRZEZNACZENIE (60 - 80 LAT)
+    </h3>
+    <p class="number">({spiritualDestinyNumber})</p>
+    <p>{spiritualDestinyContent}</p>
+  </div>
+
+  <div>
+    <h1>LINIA SEKSUALNOŚCI</h1>
+    <p class="number">({sexualityNumber})</p>
+    <p>{sexualityContent}</p>
+  </div>
+
+  <div>
+    <h1>MIŁOŚĆ</h1>
+    <h3>
+      IDEALNY PARTNER
+    </h3>
+    <p class="number">({perfectPartnerNumber})</p>
+    <p>{perfectPartnerContent}</p>
+    <h3>
+      ZADANIA KARMICZNE W ZWIĄZKU
+    </h3>
+    <p class="number">({relationshipTaskNumber})</p>
+    <p>{relationshipTaskContent}</p>
+  </div>
+
+  <div>
+    <h1>BALANS MIĘDZY MIŁOŚCIĄ A FINANSAMI</h1>
+    <p class="number">({loveAndFinancesBalanceNumber})</p>
+    <p>{loveAndFinancesBalanceContent}</p>
+  </div>
+
+  <div>
+    <h1>FINANSE</h1>
+    <h3>
+      KARMA FINANSOWA
+    </h3>
+    <p class="number">({financeKarmaNumber})</p>
+    <p>{financeKarmaContent}</p>
+    <h3>
+      DOŚWIADCZENIA Z PRZESZŁYCH WCIELEŃ
+    </h3>
+    <p class="number">({experiencesFromPastIncarnationsNumber})</p>
+    <p>{experiencesFromPastIncarnationsContent}</p>
+    <h3>
+      CO BLOKUJE PRZEPŁYW FINANSOWY
+    </h3>
+    <p class="number">({financialFlowBlockNumber})</p>
+    <p>{financialFlowBlockContent}</p>
+    <h3>
+      ZAWÓD
+    </h3>
+    <p class="number">({occupationNumber})</p>
+    <p>{occupationContent}</p>
+  </div>
+
+  <div>
+    <h1>OGON KARMICZNY</h1>
+    <p class="number">({karmicTailNumber})</p>
+    <p>{karmicTailContent}</p>
+  </div>
+
+  <div>
+    <h1>RODOWE PROGRAMY</h1>
+    <h2>
+      KARMA DZIECKO - RODZICIELSKA
+    </h2>
+    <h3>
+      DLACZEGO TWOJA DUSZA PRZYSZŁA DO RODZICÓW
+    </h3>
+    <p class="number">({soulCameToParentsNumber})</p>
+    <p>{soulCameToParentsContent}</p>
+    <h3>MIEJSCE DZIECI W ŻYCIU CZŁOWIEKA</h3>
+    <p class="number">({childrenPlaceInLifeNumber})</p>
+    <p>{childrenPlaceInLifeContent}</p>
+
+    <h3>MIEJSCE RODZICÓW W ŻYCIU CZŁOWIEKA</h3>
+    <p class="number">({parentsPlaceInLifeNumber})</p>
+    <p>{parentsPlaceInLifeContent}</p>
+
+    <h2>PROGRAMY RODOWE NA LINII MĘSKIEJ</h2>
+    <h3>ZADANIE KARMICZNE OD PRZODKÓW</h3>
+    <p class="number">({parentsKarmicTaskNumber})</p>
+    <p>{parentsKarmicTaskContent}</p>
+    <p class="number">({parentsKarmicTaskSecondNumber})</p>
+    <p>{parentsKarmicTaskSecondContent}</p>
+
+    <h3>CZAS OBECNY</h3>
+    <p class="number">({presentTimeNumber})</p>
+    <p>{presentTimeContent}</p>
+    <p class="number">({presentTimeSecondNumber})</p>
+    <p>{presentTimeSecondContent}</p>
+
+    <h3>JAK PRZEPRACOWAĆ KARMICZNE ZADANIE</h3>
+    <p class="number">({howToCompleteKarmicTaskNumber})</p>
+    <p>{howToCompleteKarmicTaskContent}</p>
+    <p class="number">({howToCompleteKarmicTaskSecondNumber})</p>
+    <p>{howToCompleteKarmicTaskSecondContent}</p>
+
+    <h2>PROGRAMY RODOWE NA LINII ŻEŃSKIEJ</h2>
+    <h3>ZADANIE KARMICZNE OD PRZODKÓW</h3>
+    <p class="number">({femaleParentsKarmicTaskNumber})</p>
+    <p>{femaleParentsKarmicTaskContent}</p>
+    <p class="number">({femaleParentsKarmicTaskSecondNumber})</p>
+    <p>{femaleParentsKarmicTaskSecondContent}</p>
+
+    <h3>CZAS OBECNY</h3>
+    <p class="number">({femalePresentTimeNumber})</p>
+    <p>{femalePresentTimeContent}</p>
+    <p class="number">({femalePresentTimeSecondNumber})</p>
+    <p>{femalePresentTimeSecondContent}</p>
+
+    <h3>JAK PRZEPRACOWAĆ KARMICZNE ZADANIE</h3>
+    <p class="number">({femaleHowToCompleteKarmicTaskNumber})</p>
+    <p>{femaleHowToCompleteKarmicTaskContent}</p>
+    <p class="number">({femaleHowToCompleteKarmicTaskSecondNumber})</p>
+    <p>{femaleHowToCompleteKarmicTaskSecondContent}</p>
+  </div>
+
+  <div>
+    <h1>MARZENIA</h1>
+    <h3>
+      SKĄD MOŻEMY SZUKAĆ INSPIRACJI
+    </h3>
+    <p class="number">({inspirationFindNumber})</p>
+    <p>{inspirationFindContent}</p>
+    <h3>
+      PRAGNIENIE SERCA
+    </h3>
+    <p class="number">({heartDesireNumber})</p>
+    <p>{heartDesireContent}</p>
+  </div>
+
+  <div>
+    <h1>CZAKRY</h1>
+    <h2>OGÓLNY UKŁAD SYSTEMÓW </h2>
+    <h3>FIZYKA</h3>
+    <p class="number">({generalPhysicsNumber})</p>
+    <p>{generalPhysicsContent}</p>
+
+    <h3>ENERGIA</h3>
+    <p class="number">({generalEnergyNumber})</p>
+    <p>{generalEnergyContent}</p>
+
+    <h3>EMOCJA</h3>
+    <p class="number">({generalEmotionNumber})</p>
+    <p>{generalEmotionContent}</p>
+
+    <h2>MULADHARA</h2>
+    <h3>FIZYKA</h3>
+    <p class="number">({muladharaPhysicsNumber})</p>
+    <p>{muladharaPhysicsContent}</p>
+
+    <h3>ENERGIA</h3>
+    <p class="number">({muladharaEnergyNumber})</p>
+    <p>{muladharaEnergyContent}</p>
+
+    <h3>EMOCJA</h3>
+    <p class="number">({muladharaEmotionNumber})</p>
+    <p>{muladharaEmotionContent}</p>
+
+    <h2>SWADHISTHANA</h2>
+    <h3>FIZYKA</h3>
+    <p class="number">({swadhistanaPhysicsNumber})</p>
+    <p>{swadhistanaPhysicsContent}</p>
+
+    <h3>ENERGIA</h3>
+    <p class="number">({swadhistanaEnergyNumber})</p>
+    <p>{swadhistanaEnergyContent}</p>
+
+    <h3>EMOCJA</h3>
+    <p class="number">({swadhistanaEmotionNumber})</p>
+    <p>{swadhistanaEmotionContent}</p>
+
+    <h2>MANIPURA</h2>
+    <h3>FIZYKA</h3>
+    <p class="number">({manipuraPhysicsNumber})</p>
+    <p>{manipuraPhysicsContent}</p>
+
+    <h3>ENERGIA</h3>
+    <p class="number">({manipuraEnergyNumber})</p>
+    <p>{manipuraEnergyContent}</p>
+
+    <h3>EMOCJA</h3>
+    <p class="number">({manipuraEmotionNumber})</p>
+    <p>{manipuraEmotionContent}</p>
+
+    <h2>ANAHATA</h2>
+    <h3>FIZYKA</h3>
+    <p class="number">({anahataPhysicsNumber})</p>
+    <p>{anahataPhysicsContent}</p>
+
+    <h3>ENERGIA</h3>
+    <p class="number">({anahataEnergyNumber})</p>
+    <p>{anahataEnergyContent}</p>
+
+    <h3>EMOCJA</h3>
+    <p class="number">({anahataEmotionNumber})</p>
+    <p>{anahataEmotionContent}</p>
+
+    <h2>WISZUDHA</h2>
+    <h3>FIZYKA</h3>
+    <p class="number">({wiszudhaPhysicsNumber})</p>
+    <p>{wiszudhaPhysicsContent}</p>
+
+    <h3>ENERGIA</h3>
+    <p class="number">({wiszudhaEnergyNumber})</p>
+    <p>{wiszudhaEnergyContent}</p>
+
+    <h3>EMOCJA</h3>
+    <p class="number">({wiszudhaEmotionNumber})</p>
+    <p>{wiszudhaEmotionContent}</p>
+
+    <h2>AJNA</h2>
+    <h3>FIZYKA</h3>
+    <p class="number">({ajnaPhysicsNumber})</p>
+    <p>{ajnaPhysicsContent}</p>
+
+    <h3>ENERGIA</h3>
+    <p class="number">({ajnaEnergyNumber})</p>
+    <p>{ajnaEnergyContent}</p>
+
+    <h3>EMOCJA</h3>
+    <p class="number">({ajnaEmotionNumber})</p>
+    <p>{ajnaEmotionContent}</p>
+
+    <h2>SAHASRARA</h2>
+    <h3>FIZYKA</h3>
+    <p class="number">({sahasraraPhysicsNumber})</p>
+    <p>{sahasraraPhysicsContent}</p>
+
+    <h3>ENERGIA</h3>
+    <p class="number">({sahasraraEnergyNumber})</p>
+    <p>{sahasraraEnergyContent}</p>
+
+    <h3>EMOCJA</h3>
+    <p class="number">({sahasraraEmotionNumber})</p>
+    <p>{sahasraraEmotionContent}</p>
+
+  </div>
+
+  <div>
+    <h1>LATA</h1>
+    <h3>16-17,5 LAT</h3>
+    <p class="number">({16Number})</p>
+    <p>{16Content}</p>
+    <h3>
+      17,5-18,5 LAT
+    </h3>
+    <p class="number">({17Number})</p>
+    <p>{17Content}</p>
+
+    <h3>
+      18,5-19 LAT
+    </h3>
+    <p class="number">({18Number})</p>
+    <p>{18Content}</p>
+
+    <h3>
+      20 LAT
+    </h3>
+    <p class="number">({20Number})</p>
+    <p>{20Content}</p>
+
+    <h3>
+      21-22,5 LAT
+    </h3>
+    <p class="number">({21Number})</p>
+    <p>{21Content}</p>
+
+    <h3>
+      22,5-23,5 LAT
+    </h3>
+    <p class="number">({22Number})</p>
+    <p>{22Content}</p>
+
+    <h3>
+      23,5-24 LAT
+    </h3>
+    <p class="number">({23Number})</p>
+    <p>{23Content}</p>
+
+    <h3>
+      25 LAT
+    </h3>
+    <p class="number">({25Number})</p>
+    <p>{25Content}</p>
+
+    <h3>
+      26-27,5 LAT
+    </h3>
+    <p class="number">({26Number})</p>
+    <p>{26Content}</p>
+
+    <h3>
+      27,5-28,5 LAT
+    </h3>
+    <p class="number">({27Number})</p>
+    <p>{27Content}</p>
+
+    <h3>
+      28,5-29 LAT
+    </h3>
+    <p class="number">({28Number})</p>
+    <p>{28Content}</p>
+
+    <h3>
+      30 LAT
+    </h3>
+    <p class="number">({30Number})</p>
+    <p>{30Content}</p>
+
+    <h3>
+      31-32,5 LAT
+    </h3>
+    <p class="number">({31Number})</p>
+    <p>{31Content}</p>
+
+    <h3>
+      32,5-33,5 LAT
+    </h3>
+    <p class="number">({32Number})</p>
+    <p>{32Content}</p>
+
+    <h3>
+      33,5-34 LAT
+    </h3>
+    <p class="number">({33Number})</p>
+    <p>{33Content}</p>
+
+    <h3>
+      35 LAT
+    </h3>
+    <p class="number">({35Number})</p>
+    <p>{35Content}</p>
+
+    <h3>
+      36-37,5 LAT
+    </h3>
+    <p class="number">({36Number})</p>
+    <p>{36Content}</p>
+
+    <h3>
+      37,5-38,5 LAT
+    </h3>
+    <p class="number">({37Number})</p>
+    <p>{37Content}</p>
+
+    <h3>
+      38,5-39 LAT
+    </h3>
+    <p class="number">({38Number})</p>
+    <p>{38Content}</p>
+
+    <h3>
+      40 LAT
+    </h3>
+    <p class="number">({40Number})</p>
+    <p>{40Content}</p>
+
+    <h3>
+      41-42,5 LAT
+    </h3>
+    <p class="number">({41Number})</p>
+    <p>{41Content}</p>
+
+    <h3>
+      42,5-43,5 LAT
+    </h3>
+    <p class="number">({42Number})</p>
+    <p>{42Content}</p>
+
+    <h3>
+      43,5-44 LAT
+    </h3>
+    <p class="number">({43Number})</p>
+    <p>{43Content}</p>
+
+    <h3>
+      45 LAT
+    </h3>
+    <p class="number">({45Number})</p>
+    <p>{45Content}</p>
+
+    <h3>
+      46-47,5 LAT
+    </h3>
+    <p class="number">({46Number})</p>
+    <p>{46Content}</p>
+
+    <h3>
+      47,5-48,5 LAT
+    </h3>
+    <p class="number">({47Number})</p>
+    <p>{47Content}</p>
+
+    <h3>
+      48,5-49 LAT
+    </h3>
+    <p class="number">({48Number})</p>
+    <p>{48Content}</p>
+
+    <h3>
+      50 LAT
+    </h3>
+    <p class="number">({50Number})</p>
+    <p>{50Content}</p>
+
+    <h3>
+      51-52,5 LAT
+    </h3>
+    <p class="number">({51Number})</p>
+    <p>{51Content}</p>
+
+    <h3>
+      52,5-53,5 LAT
+    </h3>
+    <p class="number">({52Number})</p>
+    <p>{52Content}</p>
+
+    <h3>
+      53,5-54 LAT
+    </h3>
+    <p class="number">({53Number})</p>
+    <p>{53Content}</p>
+
+    <h3>
+      55 LAT
+    </h3>
+    <p class="number">({55Number})</p>
+    <p>{55Content}</p>
+
+    <h3>
+      56-57,5 LAT
+    </h3>
+    <p class="number">({56Number})</p>
+    <p>{56Content}</p>
+
+    <h3>
+      57,5-58,5 LAT
+    </h3>
+    <p class="number">({57Number})</p>
+    <p>{57Content}</p>
+
+    <h3>
+      58,5-59 LAT
+    </h3>
+    <p class="number">({58Number})</p>
+    <p>{58Content}</p>
+
+    <h3>
+      60 LAT
+    </h3>
+    <p class="number">({60Number})</p>
+    <p>{60Content}</p>
+
+    <h3>
+      61-62,5 LAT
+    </h3>
+    <p class="number">({61Number})</p>
+    <p>{61Content}</p>
+
+    <h3>
+      62,5-63,5 LAT
+    </h3>
+    <p class="number">({62Number})</p>
+    <p>{62Content}</p>
+
+    <h3>
+      63,5-64 LAT
+    </h3>
+    <p class="number">({63Number})</p>
+    <p>{63Content}</p>
+
+    <h3>
+      65 LAT
+    </h3>
+    <p class="number">({65Number})</p>
+    <p>{65Content}</p>
+
+    <h3>
+      66-67,5 LAT
+    </h3>
+    <p class="number">({66Number})</p>
+    <p>{66Content}</p>
+
+    <h3>
+      67,5-68,5 LAT
+    </h3>
+    <p class="number">({67Number})</p>
+    <p>{67Content}</p>
+
+    <h3>
+      68,5-69 LAT
+    </h3>
+    <p class="number">({68Number})</p>
+    <p>{68Content}</p>
+
+    <h3>
+      70 LAT
+    </h3>
+    <p class="number">({70Number})</p>
+    <p>{70Content}</p>
+
+    <h3>
+      71-72,5 LAT
+    </h3>
+    <p class="number">({71Number})</p>
+    <p>{71Content}</p>
+
+    <h3>
+      72,5-73,5 LAT
+    </h3>
+    <p class="number">({72Number})</p>
+    <p>{72Content}</p>
+
+    <h3>
+      73,5-74 LAT
+    </h3>
+    <p class="number">({73Number})</p>
+    <p>{73Content}</p>
+
+    <h3>
+      75 LAT
+    </h3>
+    <p class="number">({75Number})</p>
+    <p>{75Content}</p>
+
+    <h3>
+      76-77,5 LAT
+    </h3>
+    <p class="number">({76Number})</p>
+    <p>{76Content}</p>
+
+    <h3>
+      77,5-78,5 LAT
+    </h3>
+    <p class="number">({77Number})</p>
+    <p>{77Content}</p>
+
+    <h3>
+      78,5-79 LAT
+    </h3>
+    <p class="number">({78Number})</p>
+    <p>{78Content}</p>
+
+
+  </div>
+
+  <div>
+    <h1>REKOMENDACJE</h1>
+    <p class="number">({recommendationsFirstNumber})</p>
+    <p>{recommendationsFirstContent}</p>
+
+    <p class="number">({recommendationsSecondNumber})</p>
+    <p>{recommendationsSecondContent}</p>
+
+    <p class="number">({recommendationsThirdNumber})</p>
+    <p>{recommendationsThirdContent}</p>
+
+  </div>
+</body>
+</html>

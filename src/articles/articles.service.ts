@@ -4,6 +4,8 @@ import { google, drive_v3 } from 'googleapis';
 import { TokenService } from './token.service';
 import { generatePdf } from '../utils/generatePdf';
 import * as fs from 'fs';
+import { InjectModel } from '@nestjs/sequelize';
+import { Articles } from './articles.model';
 
 config();
 
@@ -15,7 +17,11 @@ interface FileStructure {
 export class ArticlesService {
   private readonly drive: drive_v3.Drive;
 
-  constructor(private readonly tokenService: TokenService) {
+  constructor(
+    private readonly tokenService: TokenService,
+    @InjectModel(Articles)
+    private readonly articlesModel: typeof Articles,
+  ) {
     this.drive = google.drive({
       version: 'v3',
       auth: this.tokenService.getOAuth2Client(),
@@ -100,46 +106,73 @@ export class ArticlesService {
     }
   }
 
-  async generateHtmlFromJson(data: FileStructure): Promise<string> {
-    let html = '<html><body>';
-    const fileStructure = await this.readJsonFile();
-    const topLevelKeys = Object.keys(fileStructure);
-
+  async saveDataFromJson() {
     try {
-      for (const key in data) {
-        const isTopLevelKey = topLevelKeys.includes(data[key] as string);
+      const jsonData = fs.readFileSync('./src/assets/folder.json', 'utf-8');
+      const data = JSON.parse(jsonData);
 
-        if (typeof data[key] === 'string') {
-          const fileId = data[key] as string;
-          const content = await this.readGoogleDocContent(fileId);
-          html += `<p>${content}</p>`;
-        } else if (typeof data[key] === 'object') {
-          // Это вложенный объект, поэтому это заголовок
-          html += isTopLevelKey ? `<h1>${key}</h1>` : `<h3>${key}</h3>`;
-          html += await this.generateHtmlFromJson(data[key] as FileStructure);
-        } else {
-          // Пропускаем все остальные случаи
-          console.error(`Skipping key ${key}`);
+      for (const title of Object.keys(data)) {
+        const subtitles = data[title];
+        for (const subtitle of Object.keys(subtitles)) {
+          const numbers = subtitles[subtitle];
+          for (const number of Object.keys(numbers)) {
+            const item = numbers[number];
+            // Создаем запись в базе данных
+            await this.articlesModel.create({
+              title: title,
+              subtitle: subtitle,
+              number: number,
+              data: await this.readGoogleDocContent(item),
+            });
+          }
         }
       }
-      html += '</body></html>';
-      return html;
     } catch (error) {
-      console.error('Error generating HTML from JSON:', error.message);
+      console.error('Error saving data:', error.message);
       throw new Error(error);
     }
   }
 
-  async generateAndSavePdfFromJson() {
-    try {
-      const fileStructure = await this.readJsonFile();
-      const htmlContent = await this.generateHtmlFromJson(fileStructure);
-      await generatePdf(htmlContent);
-    } catch (error) {
-      console.error('Error generating and saving PDF:', error.message);
-      throw new Error(error);
-    }
-  }
+  // async generateHtmlFromJson(data: FileStructure): Promise<string> {
+  //   let html = '<html><body>';
+  //   const fileStructure = await this.readJsonFile();
+  //   const topLevelKeys = Object.keys(fileStructure);
+  //
+  //   try {
+  //     for (const key in data) {
+  //       const isTopLevelKey = topLevelKeys.includes(data[key] as string);
+  //
+  //       if (typeof data[key] === 'string') {
+  //         const fileId = data[key] as string;
+  //         const content = await this.readGoogleDocContent(fileId);
+  //         html += `<p>${content}</p>`;
+  //       } else if (typeof data[key] === 'object') {
+  //         // Это вложенный объект, поэтому это заголовок
+  //         html += isTopLevelKey ? `<h1>${key}</h1>` : `<h3>${key}</h3>`;
+  //         html += await this.generateHtmlFromJson(data[key] as FileStructure);
+  //       } else {
+  //         // Пропускаем все остальные случаи
+  //         console.error(`Skipping key ${key}`);
+  //       }
+  //     }
+  //     html += '</body></html>';
+  //     return html;
+  //   } catch (error) {
+  //     console.error('Error generating HTML from JSON:', error.message);
+  //     throw new Error(error);
+  //   }
+  // }
+
+  // async generateAndSavePdfFromJson() {
+  //   try {
+  //     const fileStructure = await this.readJsonFile();
+  //     const htmlContent = await this.generateHtmlFromJson(fileStructure);
+  //     await generatePdf(htmlContent);
+  //   } catch (error) {
+  //     console.error('Error generating and saving PDF:', error.message);
+  //     throw new Error(error);
+  //   }
+  // }
 
   // async readFiles() {
   //   try {

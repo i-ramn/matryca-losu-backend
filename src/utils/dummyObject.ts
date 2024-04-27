@@ -127,12 +127,5 @@ export const dummyObj = {
   pe1: 16,
   pe2: 6,
   pf: 8,
-};
-
-const a = {
-  '1. MATRYCA LOSU': {
-    '7. FINANSE': {
-      '4. ZAWÓD - 18': 'QZzEls04AgG-6Gv0VTYVwj8Iaa_FJDI_',
-    },
-  },
+  ps: 1,
 };

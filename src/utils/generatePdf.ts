@@ -10,12 +10,23 @@ export const generatePdf = async (htmlContent: string) => {
     const page = await browser.newPage();
     await page.setContent(htmlContent);
 
+    // Дождаться загрузки изображения с классом "image"
+    await page.waitForSelector('.image');
+
     // Generate PDF
-    await page.pdf({ path: './src/assets/output.pdf', format: 'A4' });
+    await page.pdf({
+      path: './src/assets/output.pdf',
+      format: 'A4',
+      printBackground: true,
+      margin: {
+        bottom: 120,
+        top: 100,
+      },
+    });
 
     await browser.close();
   } catch (e) {
-    console.error('Error listing files:', e.message);
+    console.error('Error generating PDF:', e.message);
   }
 };
 

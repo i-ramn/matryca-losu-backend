@@ -62,7 +62,7 @@
     }
   },
   "2. TALENTY": {
-    "1. ŹRÓDŁO ŻYCIOWEJ ENERGII(2)  To co nam daje i odbiera energię.": {
+    "1. ŹRÓDŁO ŻYCIOWEJ ENERGII(2) ": {
       "1": "1fVLzSAKi-FBRoM0ZOnTCKzu_oi17HyJ9e1qsGo6gCcQ",
       "2": "15ltoJB6y9f83ssiuw-jNyzoUAYYdneNbyJa6MRZBlJo",
       "3": "1JiHHoUCxjHP6BdCXCHXbPPs8HkWVvEwy6iGS_WTSRdY",
@@ -74,8 +74,7 @@
       "9": "12Y2iG9ehT2JdJ-gj8tZKwCwbn1ej8Dz5eluGqz5Qv2E",
       "10": "1jzvWBu49Woo4VPovIbWoQJ-N5-jnHSFXcikYlMRsPjM",
       "11": "1vtCmnHUe1h6p2ua8AMBZaxvmir90qt8txN4m0xOkx-M",
-      "12": "12J1DxWcdsUmlA1uwuqaHGJEWslPGONbsK_gKC7zVPN0",
-      "ŹRÓDŁO ŻYCIOWEJ ENERGII - To co nam daje i odbiera energię": "1leFXzBwEvYcRyuf6qRWG-PJd3dVic3qsjD1AhRMGE1U"
+      "12": "12J1DxWcdsUmlA1uwuqaHGJEWslPGONbsK_gKC7zVPN0"
     },
     "2. UKRYTE MOCE(14) To są umiejętności nadane przez wszechświat jako bonus. Trzeba rozwijać.": {
       "1": "1VxrD4K1OsWD7_zuNe6BD3Xo7cl3UIqmVa-VAcy0S2Tw",
@@ -194,29 +193,31 @@
       "22": "1lX-8lP0h8xuaiS7NcwTkb1xwYsdxaQzYuxWjIViMhbU"
     }
   },
-  "4. SEKSUALNOŚĆ 5-10-32": {
-    "4-8-12": "1VMV6ZD0fJxXWlTPsXK69HzH3gRtzSY0ARbbVGm7TwMw",
-    "10-11-21": "1-3aPAwqw8QJpWPcZlJq0u42Fm0yEonp0EexnMFP-OHs",
-    "22-8-3": "1K_q2ZDvncQ8pL6fYmZEIf-v1v28iu8X_XQa3u0o4as8",
-    "20-4-6": "1bEFDJ8cVMzIa-FySEUy9b005srcMxZDO9vO3YRN_l6A",
-    "18-9-9": "1-j9Jd5p7ClZPDp_ka_vGiccjP44kFdtpEdeH_afTV6M",
-    "16-5-21": "1WqdE_mMh-wh_L_u5cJW2iwe-ywwJPtw-4uXb7CdPc-U",
-    "14-10-6": "1yz2Tu8MSfchLOEKMX755DX4oicEwXqpYkNwercrMymY",
-    "13-8-21": "1Fter4e4LJDedoQieVP2n-uljGy9pWPF1jZLiaZHRi4w",
-    "12-6-18": "1bKoqK52ELECU8SmoGxqRXcwRxWFuZD91xLHI5E2e4Ug",
-    "11-22-6": "1aKw5XcrQdNhGOk9uAdlI3wqjqBI4u4v0kA4FEKLoMq4",
-    "11-13-6": "1FVjk57VblG4NVh9uVHaLd0tL5qVf1_nANxWTS0wDVoI",
-    "11-4-15": "1KetjQkLwEf9GQTmKNiBuyU9Cms3qc4Gh0ehKem8fNyk",
-    "10-20-3": "1a-uZkINEoBOLxVCGiSvV2VoOOXxtsMzA6fPctk41zZk",
-    "9-9-18": "1sj7WqdY7YJHCnDMNbstBh9IIN-tKBkH8m_XvE8wkL1s",
-    "8-16-6": "10h4-14c-6GcFBtHpQCG1iNLK_alqEHIr_dIQjj7oGgo",
-    "8-7-15": "18SzcNGBvjtmD7mNQHUV-_sBZYxesULO2KJimTKQkM2k",
-    "7-5-12": "17bunljKqdM2zdY8M4pKcJYlwwmPVCspIfxcwiXvIGpE",
-    "7-14-21": "1ues4YBY_v2ezIV-tGx2Me2xWyVVAb1OFqCroTSq72Lg",
-    "6-12-18": "1grb0ym6d0qaF6G0i-VGtkDfuGKWq73pDbyahw1Hvh5E",
-    "6-3-9": "1v6ohp2injViIBpTxF6XptOxQYIUksk77lv9AC_92Xmk",
-    "5-10-15": "1y45DVo0LYGtGhPBful8wNkLNx_7UJucXfDVpLc7TXEs",
-    "3-6-9": "16kBaA08Z7usEAjHFBnu9nYeeLxPZJLoisa3jbOXHZVQ"
+  "4. SEKSUALNOŚĆ ": {
+    "5-10-32": {
+      "4-8-12": "1VMV6ZD0fJxXWlTPsXK69HzH3gRtzSY0ARbbVGm7TwMw",
+      "10-11-21": "1-3aPAwqw8QJpWPcZlJq0u42Fm0yEonp0EexnMFP-OHs",
+      "22-8-3": "1K_q2ZDvncQ8pL6fYmZEIf-v1v28iu8X_XQa3u0o4as8",
+      "20-4-6": "1bEFDJ8cVMzIa-FySEUy9b005srcMxZDO9vO3YRN_l6A",
+      "18-9-9": "1-j9Jd5p7ClZPDp_ka_vGiccjP44kFdtpEdeH_afTV6M",
+      "16-5-21": "1WqdE_mMh-wh_L_u5cJW2iwe-ywwJPtw-4uXb7CdPc-U",
+      "14-10-6": "1yz2Tu8MSfchLOEKMX755DX4oicEwXqpYkNwercrMymY",
+      "13-8-21": "1Fter4e4LJDedoQieVP2n-uljGy9pWPF1jZLiaZHRi4w",
+      "12-6-18": "1bKoqK52ELECU8SmoGxqRXcwRxWFuZD91xLHI5E2e4Ug",
+      "11-22-6": "1aKw5XcrQdNhGOk9uAdlI3wqjqBI4u4v0kA4FEKLoMq4",
+      "11-13-6": "1FVjk57VblG4NVh9uVHaLd0tL5qVf1_nANxWTS0wDVoI",
+      "11-4-15": "1KetjQkLwEf9GQTmKNiBuyU9Cms3qc4Gh0ehKem8fNyk",
+      "10-20-3": "1a-uZkINEoBOLxVCGiSvV2VoOOXxtsMzA6fPctk41zZk",
+      "9-9-18": "1sj7WqdY7YJHCnDMNbstBh9IIN-tKBkH8m_XvE8wkL1s",
+      "8-16-6": "10h4-14c-6GcFBtHpQCG1iNLK_alqEHIr_dIQjj7oGgo",
+      "8-7-15": "18SzcNGBvjtmD7mNQHUV-_sBZYxesULO2KJimTKQkM2k",
+      "7-5-12": "17bunljKqdM2zdY8M4pKcJYlwwmPVCspIfxcwiXvIGpE",
+      "7-14-21": "1ues4YBY_v2ezIV-tGx2Me2xWyVVAb1OFqCroTSq72Lg",
+      "6-12-18": "1grb0ym6d0qaF6G0i-VGtkDfuGKWq73pDbyahw1Hvh5E",
+      "6-3-9": "1v6ohp2injViIBpTxF6XptOxQYIUksk77lv9AC_92Xmk",
+      "5-10-15": "1y45DVo0LYGtGhPBful8wNkLNx_7UJucXfDVpLc7TXEs",
+      "3-6-9": "16kBaA08Z7usEAjHFBnu9nYeeLxPZJLoisa3jbOXHZVQ"
+    }
   },
   "5. MIŁOŚĆ": {
     "1. IDEALNY PARTNER - 17": {
@@ -264,27 +265,29 @@
       "22": "1CABQJsxEEQh-nDBOtrFgEUuhyAbfPS7D6r1xMJAYgcs"
     }
   },
-  "6. BALANCE MIĘDZY MIŁOŚCIĄ A FINANSAMI- 16": {
-    "3": "1BcsgW3Mxr0vJmovV-dBsNZSN4c7EBPlOTfQ7zQHL76I",
-    "4": "17IKFY9z9nM-EUBUp7yXWXBVL1mm9WsY4NMyd2FQHOSc",
-    "5": "13zx0fLGP1KCwfxy-2lu8lXoR3n57TzVNEeLN3XrH_do",
-    "6": "1Hgxgl2kP8Q-FGAg198wBMBiNG7N89Xda1JNVNbYKWOY",
-    "7": "1pPC-6xoda305c5hoHd7nYkratqrnu6lCuJEtCi3mA3k",
-    "8": "1SYlHI95LNCamfRtwOJyEgL0mG3sK_It1hDyierqnunc",
-    "9": "1QtpR6Qf_eBGebf5xcqz1ixPBFjwie1KsFvOoBinDc-Y",
-    "10": "19pvZ8nK1T9YHdmX48JWEvoXvjZydWbi5B0QEXuId0aE",
-    "11": "1cwVL1YvXw8AkUjgxQBHogjxnF7MUn-WE0DeybHEKqiY",
-    "12": "13l1xuAEjs_YRIrQhqSEDnOtgwNPNbCkrV9htdLleh7A",
-    "13": "1vNKjffDlqFFG8hvrzlnM4S6wG9mlBKQH0s5VjUCGWWQ",
-    "14": "1P9uaO5tpIN6f7WHNd5Y9RmfoDYqtSoVGiRK923Mkt1A",
-    "15": "1dt6_R5ECAORW75NNgvAbeVBbaDDpey-4FHUSErDMxxE",
-    "16": "1OjPzPl4OixmxBJSx6qakz4jZ6LPNRL8e3mrGOYooL9U",
-    "17": "1tsdgc2H6Wghx9gIqDFCP94-pPibbzUpS8KvbIH22Sak",
-    "18": "1efwEdLrhZlgFPt8gLqR8xKBhbqDJ5AfVcTxPenbbjwA",
-    "19": "1YbG7mSRvD1fOArmrcZINIeFwFUImD8SJjI--ZGv14SE",
-    "20": "1usxppQ12r3g8FDAhd3xGX_e3p4sZqLKnT2VMa1HhH5E",
-    "21": "13vbWGtSgvHRzNV9ibXdcar5viEgy8xJTzOn9QIxWWSc",
-    "22": "18vZ0v-dlLy4O_PP8H60C5hgboyLwN5AP2f2NiisVbeU"
+  "6. BALANCE MIĘDZY MIŁOŚCIĄ A FINANSAMI": {
+    "BALANCE": {
+      "3": "1BcsgW3Mxr0vJmovV-dBsNZSN4c7EBPlOTfQ7zQHL76I",
+      "4": "17IKFY9z9nM-EUBUp7yXWXBVL1mm9WsY4NMyd2FQHOSc",
+      "5": "13zx0fLGP1KCwfxy-2lu8lXoR3n57TzVNEeLN3XrH_do",
+      "6": "1Hgxgl2kP8Q-FGAg198wBMBiNG7N89Xda1JNVNbYKWOY",
+      "7": "1pPC-6xoda305c5hoHd7nYkratqrnu6lCuJEtCi3mA3k",
+      "8": "1SYlHI95LNCamfRtwOJyEgL0mG3sK_It1hDyierqnunc",
+      "9": "1QtpR6Qf_eBGebf5xcqz1ixPBFjwie1KsFvOoBinDc-Y",
+      "10": "19pvZ8nK1T9YHdmX48JWEvoXvjZydWbi5B0QEXuId0aE",
+      "11": "1cwVL1YvXw8AkUjgxQBHogjxnF7MUn-WE0DeybHEKqiY",
+      "12": "13l1xuAEjs_YRIrQhqSEDnOtgwNPNbCkrV9htdLleh7A",
+      "13": "1vNKjffDlqFFG8hvrzlnM4S6wG9mlBKQH0s5VjUCGWWQ",
+      "14": "1P9uaO5tpIN6f7WHNd5Y9RmfoDYqtSoVGiRK923Mkt1A",
+      "15": "1dt6_R5ECAORW75NNgvAbeVBbaDDpey-4FHUSErDMxxE",
+      "16": "1OjPzPl4OixmxBJSx6qakz4jZ6LPNRL8e3mrGOYooL9U",
+      "17": "1tsdgc2H6Wghx9gIqDFCP94-pPibbzUpS8KvbIH22Sak",
+      "18": "1efwEdLrhZlgFPt8gLqR8xKBhbqDJ5AfVcTxPenbbjwA",
+      "19": "1YbG7mSRvD1fOArmrcZINIeFwFUImD8SJjI--ZGv14SE",
+      "20": "1usxppQ12r3g8FDAhd3xGX_e3p4sZqLKnT2VMa1HhH5E",
+      "21": "13vbWGtSgvHRzNV9ibXdcar5viEgy8xJTzOn9QIxWWSc",
+      "22": "18vZ0v-dlLy4O_PP8H60C5hgboyLwN5AP2f2NiisVbeU"
+    }
   },
   "7. FINANSE": {
     "1. KARMA FINANSOWA - 3": {
@@ -377,36 +380,37 @@
       "22": "1LBHuchA_8uryWqEO6E5pJNS7rg6GjULcWUli7b2nmu4"
     }
   },
-  "8. OGON KARMICZNY (4-12-11)": {
-    "3-13-10": "1QyPnC-sqIxvnvz0Cplwm_SlcfM4ZRRfwvNUhg_qmKLI",
-    "6-5-17": "1ZErNWPSlQqc3ra1DLG58p7En0Iv75D9Iibexiage8qg",
-    "21-10-7": "1qDofc7ZtFwAodeQ6fxf8MnQd0_pQQG0BZ4-KkRymA6s",
-    "21-7-13": "15eQGPGzhZL0n8KUOLHsabyWEAcILDrTSNSceZY90S_4",
-    "21-4-10": "1LN2FRiqa-iQUPjiK6Q5DudFTJ8ke4DfUY7dAKyY2CTw",
-    "18-9-9": "18FMhtaoatU1DDR213pZrBKgqHPnxLAZJOY9cajdMFRE",
-    "18-6-15": "16vVfOAnU4QilXU3mNG0h3889DOIMHzYC4HBSoUHDUTI",
-    "18-3-12": "1r9rBi2EyudQAPNDRtICVt8fm47Fha41h56bS02FCvtM",
-    "15-20-5": "1tnHHW0nWX3xGlvbmbkHF1y56F0EE_6wBN_GHjUndDsE",
-    "15-8-11": "15FENwa-Y55nElnbMDiuZbXVNTz_FVLO7MaMR5A5VE_w",
-    "15-5-8": "1KUh7diaNGhTyEd5wZi_G3dcXPSUi3U9kJY-ztZyIdio",
-    "12-19-7": "12qepXaRye_qB9q0ZrExcUTg-1PTfoJKxblgXHb0x014",
-    "12-16-4": "1TKvHGZWGQe14HwZFvbKOf77pUA2RSbt_L9iQYv7dUEE",
-    "9-18-9": "1f49Vmo6VZe1WdmgnSdHhlHb4461JB1654koxZma2aa8",
-    "9-15-6": "1VlOr6w4hDby_yen8g9CehPldMb_csMdLI7--sW632OU",
-    "9-12-3": "15TLAn1y9QHhOojV7Xwca1G1qe3lAVV99HsY1hOe0F5E",
-    "9-9-18": "1w5gcSR9e3Pplj75pgLkUxZZd5f3biIV2s39zw7JuxVY",
-    "9-3-21": "1r3i58iuZhiBGBM4EQeIWZWuBiZ2--5paaxmiCz6-3FA",
-    "3-22-19": "1VtrPkTncghIfRbWz5GE6dQ2XEpfAn8OR1A46pqAfpfs",
-    "6-20-14": "1Wbugxy3yLB5WYIczzpoKLRTdA4llcqEcHnumm-LqSaU",
-    "6-17-11": "1W2ObkUxkdbcXEeHio48aDUnIoTFZNN0c-1jouq_lL1k",
-    "3-7-22": "1a0wQp6ylGAWI7UnShMVOkaFu-kKeB1uTOCfubTl63vM",
-    "6-14-8": "13ruipYrwjjxbr38WEbeDrks-rBunC9eoN9EVIxwVAIs",
-    "6-8-20": "1QReJQGKt7oQBmOj8ovw5ssMHubOY5jiuYQdJ87S4YZo",
-    "21-10-16": "1lnQ7OWhL8bQwOUVf8UB2woCcidTqBUVxfpbIjr7FoOs",
-    "18-6-6": "1Hkg95JeDRvX8FdaKtiVEoZLOJRVB9wMyX13jiuFLGXM"
+  "8. OGON KARMICZNY ": {
+    "(4-12-11)": {
+      "3-13-10": "1QyPnC-sqIxvnvz0Cplwm_SlcfM4ZRRfwvNUhg_qmKLI",
+      "6-5-17": "1ZErNWPSlQqc3ra1DLG58p7En0Iv75D9Iibexiage8qg",
+      "21-10-7": "1qDofc7ZtFwAodeQ6fxf8MnQd0_pQQG0BZ4-KkRymA6s",
+      "21-7-13": "15eQGPGzhZL0n8KUOLHsabyWEAcILDrTSNSceZY90S_4",
+      "21-4-10": "1LN2FRiqa-iQUPjiK6Q5DudFTJ8ke4DfUY7dAKyY2CTw",
+      "18-9-9": "18FMhtaoatU1DDR213pZrBKgqHPnxLAZJOY9cajdMFRE",
+      "18-6-15": "16vVfOAnU4QilXU3mNG0h3889DOIMHzYC4HBSoUHDUTI",
+      "18-3-12": "1r9rBi2EyudQAPNDRtICVt8fm47Fha41h56bS02FCvtM",
+      "15-20-5": "1tnHHW0nWX3xGlvbmbkHF1y56F0EE_6wBN_GHjUndDsE",
+      "15-8-11": "15FENwa-Y55nElnbMDiuZbXVNTz_FVLO7MaMR5A5VE_w",
+      "15-5-8": "1KUh7diaNGhTyEd5wZi_G3dcXPSUi3U9kJY-ztZyIdio",
+      "12-19-7": "12qepXaRye_qB9q0ZrExcUTg-1PTfoJKxblgXHb0x014",
+      "12-16-4": "1TKvHGZWGQe14HwZFvbKOf77pUA2RSbt_L9iQYv7dUEE",
+      "9-18-9": "1f49Vmo6VZe1WdmgnSdHhlHb4461JB1654koxZma2aa8",
+      "9-15-6": "1VlOr6w4hDby_yen8g9CehPldMb_csMdLI7--sW632OU",
+      "9-12-3": "15TLAn1y9QHhOojV7Xwca1G1qe3lAVV99HsY1hOe0F5E",
+      "9-9-18": "1w5gcSR9e3Pplj75pgLkUxZZd5f3biIV2s39zw7JuxVY",
+      "9-3-21": "1r3i58iuZhiBGBM4EQeIWZWuBiZ2--5paaxmiCz6-3FA",
+      "3-22-19": "1VtrPkTncghIfRbWz5GE6dQ2XEpfAn8OR1A46pqAfpfs",
+      "6-20-14": "1Wbugxy3yLB5WYIczzpoKLRTdA4llcqEcHnumm-LqSaU",
+      "6-17-11": "1W2ObkUxkdbcXEeHio48aDUnIoTFZNN0c-1jouq_lL1k",
+      "3-7-22": "1a0wQp6ylGAWI7UnShMVOkaFu-kKeB1uTOCfubTl63vM",
+      "6-14-8": "13ruipYrwjjxbr38WEbeDrks-rBunC9eoN9EVIxwVAIs",
+      "6-8-20": "1QReJQGKt7oQBmOj8ovw5ssMHubOY5jiuYQdJ87S4YZo",
+      "21-10-16": "1lnQ7OWhL8bQwOUVf8UB2woCcidTqBUVxfpbIjr7FoOs",
+      "18-6-6": "1Hkg95JeDRvX8FdaKtiVEoZLOJRVB9wMyX13jiuFLGXM"
+    }
   },
-  "9.PROGRAMY RODOWE": {
-    "1. KARMA DZIECKO-RODZICIELSKA (1-21-20)": {
+  "KARMA DZIECKO-RODZICIELSKA (1-21-20)": {
       "1. DLACZEGO TWOJA DUSZA PRZYSZŁA DO RODZICÓW (1)": {
         "1": "12t0iIvQ5g35UIAyxKENFNgqWcCM5dAkZcnSDgxkEEU0",
         "2": "15rWTlnTH8w2S44LT52WzvneEa5F8IRVX-xdN4PdatNw",
@@ -479,7 +483,7 @@
         "22": "1Y4EArGz-z_tm9sq8OzAJQpqAWoOcx3ogS2nnc43ihiQ"
       }
     },
-    "2. PROGRAMY RODOWE NA LINII MĘSKIEJ": {
+  "PROGRAMY RODOWE NA LINII MĘSKIEJ": {
       "1. ZADANIE KARMICZNE OD PRZODKÓW (6-8)": {
         "1": "1TpiWBEvxWvj7cY_pv3Ft7J_VWN07yZW2pHtWkYDBSJA",
         "2": "1zs-KG3V-i2zka7SBNIPOk-NN3qOht7XDY9IlG4mUinM",
@@ -553,7 +557,7 @@
         "22": "1PfHLpBrbxHiv9Ip_CGrSBbDYqLNY9h9Hns09jnJD8fI"
       }
     },
-    "3. PROGRAMY RODOWE NA LINII ŻEŃSKIEJ": {
+  "PROGRAMY RODOWE NA LINII ŻEŃSKIEJ": {
       "3. JAK PRZEPRACOWAĆ KARMICZNE ZADANIE (26-28)": {
         "1": "1iRPbwgb-aA8Uw6hC6ehMu-_bv2PL055RqGVgTc2_NUk",
         "2": "1wdR2AWRTdVj-vdIXNPqpeTzLjikSNglz-vkJNAWvSpw",
@@ -626,16 +630,10 @@
         "21": "1wGbLwdhOeni3QgGcX9ripYE9K_9gyzG8VPGyFaM6b9g",
         "22": "16zMLKvsa65Pcxeot-9uGEqIVYLjQWW-rJczpYfFLZfA"
       }
-    }
-  },
+    },
   "10. MARZENIA": {
     "1. SKĄD MOŻEMY SZUKAĆ INSPIRACJI - 30": {
-      "1": "1DYZ05HjtV0uyaw7sI2j0sivOhAZyllSIXLJP5k_yofg",
-      "2": "1RoK7mcDblwMlsUh1gcicSEMJnViygx8KC_UKn1lFM8c",
-      "3": "14MDqrD8_LPGUN9mhgz0Q1fwUy9g7XZ32nYeDbjnVGCk",
-      "4": "1mnfcV6sdzcxuH9yFR5bt9tPC0NrpccJ3j4T532uter4",
-      "5": "10hSe6EVPUekdGPilAYOr6ZbKE_Rng9QqrvnAv4FjrAk",
-      "6": "1p0803o3Bdq3i-RCiW_ZHIM-ILQf4-UZm1V20bhqQOkQ",
+
       "7": "19-M6mtylTc8Z90vjkah_fJ8ahEMLBVzRvp_mDy08l_A",
       "8": "1rGn843WHb398R1MtiSIpnCYU1YUp_TwvlnpF716BTYY",
       "9": "1fZarW1_jFKUqdHLYGczIkkljaG-h1TkiBDG1Dim6kdo",
@@ -678,8 +676,7 @@
       "22": "1_W8nWW-aek4sB4-6Ub9-GwevPkRCecenbrQvjWIq8bQ"
     }
   },
-  "11. CZAKRY. MAPA ZDROWIA": {
-    "1. MULADHARA": {
+  "1. MULADHARA": {
       "1. FIZYKA": {
         "1": "1sXhZG2NZe0-1C-kUScZsNTDz9z0LVdVe-x3yAxP38FE",
         "2": "1IbogWAnQTOjnG9fFCLeAHHDsbCjlPWTJ5ZY2bd3_9To",
@@ -753,7 +750,7 @@
         "22": "1_oY-l47foFDdpFH2vOuSzJ5gyfTZMRQ5J_MhOqATK44"
       }
     },
-    "2. SWADHISTHANA": {
+  "2. SWADHISTHANA": {
       "1. FIZYKA": {
         "1": "1ABqG_tfjvY8uCBvwwRMaTnqG3r0rQZoz878F4-hoPh8",
         "2": "1KNUQvOH4O-HCooqL7y056fKd6bv5ulkjp1PVc4YLxG8",
@@ -827,7 +824,7 @@
         "22": "1cG2OJCph6Ugo576p-4YlU2poXBujfvx1-p1xSa2Hha4"
       }
     },
-    "3. MANIPURA": {
+  "3. MANIPURA": {
       "1. FIZYKA": {
         "1": "10P_rxSOKSrly0kfdNtF7nA4--sMGeGDikeGN3wg92yo",
         "2": "1s3rmUOKRaUCGAZuanei888an3QZEHe5-ZuctWPjT8Wo",
@@ -901,7 +898,7 @@
         "22": "1JcmC44ne5XMtoNQlMdM2ogj1fQPnkh1EJ9InEonAxqM"
       }
     },
-    "4. ANAHATA": {
+  "4. ANAHATA": {
       "1. FIZYKA": {
         "1": "15ReUgM5L6ruW9LraKKh_a8pLQlDr_EaIqzhwdPl1oBk",
         "2": "1y9rnnhiJ0khNd0E1w7fwrtiwMK7KeIbn0NyDAJD73EU",
@@ -975,7 +972,7 @@
         "22": "1yjj-XjCPZ8TfiQButOsxP0ys7Zzad2HeasRpOpF3pXc"
       }
     },
-    "5. WISZUDHA": {
+  "5. WISZUDHA": {
       "1. FIZYKA": {
         "1": "1Fa7_OEx2FZnrSl28UE7oNnqaQDOgP2HYX4bSgQzn6iA",
         "2": "17TqV7e3vdjqueTFmsfcev-TcjWoaQEgE7WcV9Gpi30M",
@@ -1049,7 +1046,7 @@
         "22": "1_T5E4pXfjXAGVzVXSZkCQWdAe0Xr-5RM5ztYKApQaRo"
       }
     },
-    "6. AJNA": {
+  "6. AJNA": {
       "1. FIZYKA": {
         "1": "1hrMN-0b-azAm6sXobd2Nrr2a7X5iXNwkSITBLjGLeGY",
         "2": "1VySn4XX5Upr7purZbj9XtXyXMxIjTkXTSJpoSgWC6rM",
@@ -1123,7 +1120,7 @@
         "22": "16B86Wz1JjN7b_BvFJX61th6YkGZjijMGrHOedc9W45s"
       }
     },
-    "7. SAHASRARA": {
+  "7. SAHASRARA": {
       "1. FIZYKA": {
         "1": "11ceEZLIEAvyopmUwkj3VAq825oL2QxlRrB82e5m_qhM",
         "2": "1YqMdh9GUF1Atz441GCZKNNH39Ko9GmZI6sCePCWouaw",
@@ -1194,32 +1191,10 @@
         "19": "1qIeYVlQIEFQqmqLX1Z6r-yKtr9gT8-CgtTM7JZuxuNc",
         "20": "1R5gu3HQBmba0h8hl-QHEexv-P_okCiebp8ME2NkUQ3k",
         "21": "1Zmmq13k6R46hZe_4YSxF1UQlFcL6iYaO1bznR8iAUm8",
-        "22": "1pKNpXdY-_dXujDyCI2aVcRmrID1IP1bkmnqQxsJ5pRA",
-        "6.docx": "1FyqZyOUZZ0Ni0WBwKJMMd4rUiNOR0idH",
-        "22.docx": "1KVSB0vLyJkMYGX-1YAW4owZOI1xW95gc",
-        "21.docx": "1CI9kxDqz5LaX4LEDasHXWyFS-5oi1xyw",
-        "20.docx": "1Bb7eQSq9aoQa3vuPg1jHCu9JzgyZWOVV",
-        "19.docx": "1XWhkasr8YFPtxo9Qlud-PfSKULRXU3RT",
-        "18.docx": "1HyIScU2lysKlc1Uw26oCGzI3rD_2MWai",
-        "17.docx": "1i6dYXf458ICOIZ49L-2IAbU-Gdgwmtk3",
-        "16.docx": "1b2mZ4e3OCAxAWQTzF-QmHsWugPv9AzY2",
-        "15.docx": "1KOMc9l7imkS6GKIuF6_OS1Q9CLJZ3EbP",
-        "14.docx": "1OvNo1FbfDUo9_Xs32WKIYMCzsGuQM0P_",
-        "13.docx": "1KF1uhsa5gR6LBgbgaBERgp0a569lLOJk",
-        "12.docx": "1mHlSOfwRz_RmdmcFoNpAZtsRVZ6xg656",
-        "11.docx": "1v_w6pODg9k6Fga7-zqq9f5whigvUObVr",
-        "10.docx": "1XmbQ6KJ99qissqoiAjFPpqFVCIJuAx7z",
-        "2.docx": "1roE__qVLX_i8luqrmBCDvMpRWqGGEkct",
-        "9.docx": "1XftZ1N4URQ--MMxkr22U-czIMbUaIE7_",
-        "5.docx": "1GkL2UoLe62LMiX93HyYZ7G7n1vduO6Xj",
-        "4.docx": "1Etjha9rd3JLZZ0Ke8arJAxvNIDmaZ2UT",
-        "8.docx": "1pqZFZvIxoCEiGDXfpo03k2gfYuePvUdu",
-        "7.docx": "1JrWd3VJk9v7FH65k19NOZKFl0Nf9i76X",
-        "3.docx": "1IfJgoimWeCSbuKBTxjU4dU0ZCBznUbqZ",
-        "1.docx": "1CJUNvM1ILlLJRjeRWJovgAh-8fTPU92v"
+        "22": "1pKNpXdY-_dXujDyCI2aVcRmrID1IP1bkmnqQxsJ5pRA"
       }
     },
-    "OGÓLNY UKŁAD SYSTEMÓW ": {
+  "OGÓLNY UKŁAD SYSTEMÓW ": {
       "1. FIZYKA": {
         "1": "1Rm5fxlpF0ugavN_hBYyT72pQVke9GnFGJuWbYRUHcoc",
         "2": "1WzAXYHk5MnLPmqt7VzuaTKJswA46DrvjlgTkNzascvQ",
@@ -1291,8 +1266,7 @@
         "21": "1JPdCLmm0mWl85VL-aShAlOaZiDSiKCnJ8VEVRMoueWo",
         "22": "1DoN1ID6Qn_LfjSyaDUTc2lzr-eYx_r6gC4QUm9hj9jM"
       }
-    }
-  },
+    },
   "12. LATA": {
     "16-17,5 LAT - 30 LAT": {
       "1": "10Z1NpiPWbuEW49Ow5Zt2JSgSja0rXAsM8Us8Evhxcn0",
@@ -1439,28 +1413,30 @@
       "22": "1ZHXwqofUKfLlWjZEOnzWEYvf0vc-C8I5nVeFZLLv-qg"
     }
   },
-  "13. REKOMENDACJA (1-2-5)": {
-    "1": "1XtV7bEIpNBTzDHfHcWLHMBFDDySPpI5n0WrZY99qxIs",
-    "2": "1ekrDCZ4IjMukNOz9Tov1KjgoXfzUQO4J2ANBRN_GHls",
-    "3": "1mA9ZeRXvnBotIJCUvnpp0Zw8Gl_FZDNLS3iJf3bX0Yg",
-    "4": "1_w6bq2BRkb08YcT6gj5XW2JgqGkBkqgCKIuFG2SHx9E",
-    "5": "1pbbAY8Xevu447nD_H6wfxOxQgxl9Gr_uD5dGq5fCmgc",
-    "6": "18vyM_R3PhOlWzOQT_cwNrI-47C037zlj80GjotyoVa4",
-    "7": "1jjJMlwn4SNBSIw469JD3ylF56_84AzYbrjx4rVFRIzo",
-    "8": "11SCADJ7_QQglt2SxmfbQTlSgIBdaKYVMER0Lc9XSkjI",
-    "9": "1N4-2cmQlB0PdYr7H5keVyX8PlcbJ1hOJgBoC9lZ8Cwg",
-    "10": "1LPoOO-p3oQ1PS4YQqF7Avjx7gcRc5OtDKQvoaWnKTz4",
-    "11": "1MTUyTOeMAd5sU4WBOTyL2IrA7vYV56ZzK3VDN8yAq54",
-    "12": "1w2YFNWnSUkRN0Luw7A5ImWuAd9eDNFxlSjJVKLPBNEY",
-    "13": "1vjCHZDVAFwUyXBgzPFlH5UTajDDngrwEyFCtyBtyobs",
-    "14": "1d_Pivnhc9l4o9nZeTEeAk4gmG0gKtfQv4D-JWEKQUY8",
-    "15": "1g5w2zGDg2Kxy9QxtlkNNP5W5_EnVjnyS1dtbEu-6yi4",
-    "16": "1mhSZzLXx201AGg85DJZeksK3xRSv-mLXHoScmyc432I",
-    "17": "1PbgaJYabHXlCtuE6k-p9xaw41iRMtDOTSZA2YawVczI",
-    "18": "1EPRkGNxm3zUq4xEOEPCjDpvgDNB-VOXbZc3KL_AP-OY",
-    "19": "1T6Mx-S9kaKEdi2fAoYGxW6T_wdxrQlxkvSO8BIKLArw",
-    "20": "1EOhz5d4VXOdsi_xcmTXEXChrkg5XokaYlowTCWPGsW8",
-    "21": "1zKdeWU3ni_mRozor6s4IIalLfzjS5Vfz70r7-ausOcs",
-    "22": "170D41Cf-LZmCTiy8irnh-w8ao-GHpcttnSBIPJv0Io8"
+  "13. REKOMENDACJA ": {
+    "(1-2-5)": {
+      "1": "1XtV7bEIpNBTzDHfHcWLHMBFDDySPpI5n0WrZY99qxIs",
+      "2": "1ekrDCZ4IjMukNOz9Tov1KjgoXfzUQO4J2ANBRN_GHls",
+      "3": "1mA9ZeRXvnBotIJCUvnpp0Zw8Gl_FZDNLS3iJf3bX0Yg",
+      "4": "1_w6bq2BRkb08YcT6gj5XW2JgqGkBkqgCKIuFG2SHx9E",
+      "5": "1pbbAY8Xevu447nD_H6wfxOxQgxl9Gr_uD5dGq5fCmgc",
+      "6": "18vyM_R3PhOlWzOQT_cwNrI-47C037zlj80GjotyoVa4",
+      "7": "1jjJMlwn4SNBSIw469JD3ylF56_84AzYbrjx4rVFRIzo",
+      "8": "11SCADJ7_QQglt2SxmfbQTlSgIBdaKYVMER0Lc9XSkjI",
+      "9": "1N4-2cmQlB0PdYr7H5keVyX8PlcbJ1hOJgBoC9lZ8Cwg",
+      "10": "1LPoOO-p3oQ1PS4YQqF7Avjx7gcRc5OtDKQvoaWnKTz4",
+      "11": "1MTUyTOeMAd5sU4WBOTyL2IrA7vYV56ZzK3VDN8yAq54",
+      "12": "1w2YFNWnSUkRN0Luw7A5ImWuAd9eDNFxlSjJVKLPBNEY",
+      "13": "1vjCHZDVAFwUyXBgzPFlH5UTajDDngrwEyFCtyBtyobs",
+      "14": "1d_Pivnhc9l4o9nZeTEeAk4gmG0gKtfQv4D-JWEKQUY8",
+      "15": "1g5w2zGDg2Kxy9QxtlkNNP5W5_EnVjnyS1dtbEu-6yi4",
+      "16": "1mhSZzLXx201AGg85DJZeksK3xRSv-mLXHoScmyc432I",
+      "17": "1PbgaJYabHXlCtuE6k-p9xaw41iRMtDOTSZA2YawVczI",
+      "18": "1EPRkGNxm3zUq4xEOEPCjDpvgDNB-VOXbZc3KL_AP-OY",
+      "19": "1T6Mx-S9kaKEdi2fAoYGxW6T_wdxrQlxkvSO8BIKLArw",
+      "20": "1EOhz5d4VXOdsi_xcmTXEXChrkg5XokaYlowTCWPGsW8",
+      "21": "1zKdeWU3ni_mRozor6s4IIalLfzjS5Vfz70r7-ausOcs",
+      "22": "170D41Cf-LZmCTiy8irnh-w8ao-GHpcttnSBIPJv0Io8"
+    }
   }
 }
