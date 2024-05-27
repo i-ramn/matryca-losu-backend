@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<style>
+    html {
+        font-family: Arial, sans-serif
+    }
+    .container {
+        margin-top: -40px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        position: relative;
+    }
+    .num {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .a {
+        top: 27%;
+        left: 12.7%;
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+    .a1 {
+        top: 27.5%;
+        left: 19.8%;
+        width: 35px;
+        height: 35px;
+        font-size: 15px;
+    }
+    .a2 {
+        top: 28.2%;
+        left: 25.2%;
+        width: 23px;
+        height: 23px;
+        font-size: 12px;
+    }
+    .b {
+        top: 3%;
+        left: 46.46%;
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+    .b1 {
+        top: 8.2%;
+        left: 47.3%;
+        width: 35px;
+        height: 35px;
+        font-size: 15px;
+    }
+    .b2 {
+        top: 12%;
+        left: 48.2%;
+        width: 23px;
+        height: 23px;
+        font-size: 12px;
+    }
+    .c {
+        top: 27%;
+        right: 12.8%;
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+    .c1 {
+        top: 27.5%;
+        right: 19.9%;
+        width: 35px;
+        height: 35px;
+        font-size: 15px;
+    }
+    .c2 {
+        top: 28.2%;
+        right: 25.3%;
+        width: 23px;
+        height: 23px;
+        font-size: 12px;
+    }
+    .d {
+        top: 50.9%;
+        left: 46.46%;
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+    .d1 {
+        top: 46.9%;
+        left: 47.3%;
+        width: 35px;
+        height: 35px;
+        font-size: 15px;
+    }
+    .d2 {
+        top: 44.4%;
+        left: 48.2%;
+        width: 23px;
+        height: 23px;
+        font-size: 12px;
+    }
+    .e {
+        top: 26.9%;
+        left: 46.46%;
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+    .f {
+        top: 10%;
+        left: 22.52%;
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+    .g {
+        top: 10%;
+        right: 22.52%;
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+    .h {
+        top: 43.9%;
+        right: 22.52%;
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+    .i {
+        top: 43.9%;
+        left: 22.52%;
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+    .x {
+        top: 40.3%;
+        left: 53.9%;
+        width: 23px;
+        height: 23px;
+        font-size: 12px;
+    }
+    .x1 {
+        top: 36.2%;
+        left: 59.5%;
+        width: 23px;
+        height: 23px;
+        font-size: 12px;
+    }
+    .x2 {
+        top: 32.2%;
+        left: 65.4%;
+        width: 23px;
+        height: 23px;
+        font-size: 12px;
+    }
+    .ic {
+        top: 65.23%;
+        left: 56.1%;
+        width: 18px;
+        height: 18px;
+        font-size: 10px;
+    }
+    .gc {
+        top: 67.76%;
+        left: 56%;
+        width: 18px;
+        height: 18px;
+        font-size: 10px;
+    }
+    .j {
+        bottom: 7.9%;
+        left: 59.3%;
+        width: 18px;
+        height: 18px;
+        font-size: 10px;
+    }
+    .j1 {
+        top: 66.5%;
+        left: 62.8%;
+        width: 18px;
+        height: 18px;
+        font-size: 10px;
+    }
+    .j2 {
+        top: 78.35%;
+        left: 62.8%;
+        width: 18px;
+        height: 18px;
+        font-size: 10px;
+    }
+    .j3 {
+        top: 77.13%;
+        left: 56%;
+        width: 18px;
+        height: 18px;
+        font-size: 10px;
+    }
+    .j4 {
+        top: 79.62%;
+        left: 56%;
+        width: 18px;
+        height: 18px;
+        font-size: 10px;
+    }
+</style>
+<body>
+<div class="container">
+  <img class="image" src="{imageSrc}" alt="Matrix"/>
+  <p class="a num">{a}</p>
+  <p class="a1 num">{a1}</p>
+  <p class="a2 num">{a2}</p>
+  <p class="b num">{b}</p>
+  <p class="b1 num">{b1}</p>
+  <p class="b2 num">{b2}</p>
+  <p class="c num">{c}</p>
+  <p class="c1 num">{c1}</p>
+  <p class="c2 num">{c2}</p>
+  <p class="d num">{d}</p>
+  <p class="d1 num">{d1}</p>
+  <p class="d2 num">{d2}</p>
+  <p class="e num">{e}</p>
+  <p class="f num">{f}</p>
+  <p class="g num">{g}</p>
+  <p class="h num">{h}</p>
+  <p class="i num">{i}</p>
+  <p class="x num">{x}</p>
+  <p class="x1 num">{x1}</p>
+  <p class="x2 num">{x2}</p>
+  <p class="ic num">{i}</p>
+  <p class="gc num">{g}</p>
+  <p class="j num">{j}</p>
+  <p class="j1 num">{j1}</p>
+  <p class="j2 num">{j2}</p>
+  <p class="j3 num">{j3}</p>
+  <p class="j4 num">{j4}</p>
+</div>
+</body>

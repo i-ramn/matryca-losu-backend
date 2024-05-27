@@ -6,6 +6,7 @@ import { generatePdf } from '../utils/generatePdf';
 import * as fs from 'fs';
 import { InjectModel } from '@nestjs/sequelize';
 import { Articles } from './articles.model';
+import { CompatibilityArticles } from './compatibility-articles.model';
 
 config();
 
@@ -21,6 +22,8 @@ export class ArticlesService {
     private readonly tokenService: TokenService,
     @InjectModel(Articles)
     private readonly articlesModel: typeof Articles,
+    @InjectModel(CompatibilityArticles)
+    private readonly compatibilityArticlesModel: typeof CompatibilityArticles,
   ) {
     this.drive = google.drive({
       version: 'v3',
@@ -96,21 +99,21 @@ export class ArticlesService {
     }
   }
 
-  async readJsonFile(): Promise<FileStructure> {
-    try {
-      const jsonData = fs.readFileSync('./src/assets/folder.json', 'utf-8');
-      return JSON.parse(jsonData);
-    } catch (error) {
-      console.error('Error reading JSON file:', error.message);
-      throw new Error(error);
-    }
-  }
+  // async readJsonFile(): Promise<FileStructure> {
+  //   try {
+  //     const jsonData = fs.readFileSync('./src/assets/folder.json', 'utf-8');
+  //     return JSON.parse(jsonData);
+  //   } catch (error) {
+  //     console.error('Error reading JSON file:', error.message);
+  //     throw new Error(error);
+  //   }
+  // }
 
-  async saveDataFromJson() {
+  async saveDataFromJson(
+    data: Record<string, string>,
+    model: typeof Articles | typeof CompatibilityArticles,
+  ) {
     try {
-      const jsonData = fs.readFileSync('./src/assets/folder.json', 'utf-8');
-      const data = JSON.parse(jsonData);
-
       for (const title of Object.keys(data)) {
         const subtitles = data[title];
         for (const subtitle of Object.keys(subtitles)) {
@@ -118,7 +121,7 @@ export class ArticlesService {
           for (const number of Object.keys(numbers)) {
             const item = numbers[number];
             // Создаем запись в базе данных
-            await this.articlesModel.create({
+            await model.create({
               title: title,
               subtitle: subtitle,
               number: number,
@@ -131,6 +134,21 @@ export class ArticlesService {
       console.error('Error saving data:', error.message);
       throw new Error(error);
     }
+  }
+
+  async parseMatryca() {
+    const jsonData = fs.readFileSync('./src/assets/folder.json', 'utf-8');
+    const data = JSON.parse(jsonData);
+    return await this.saveDataFromJson(data, this.articlesModel);
+  }
+
+  async parseCompatibilityMatryca() {
+    const jsonData = fs.readFileSync(
+      './src/assets/compatibility.json',
+      'utf-8',
+    );
+    const data = JSON.parse(jsonData);
+    return await this.saveDataFromJson(data, this.compatibilityArticlesModel);
   }
 
   // async generateHtmlFromJson(data: FileStructure): Promise<string> {

@@ -1,7 +1,7 @@
-import { dummyObj } from './dummyObject';
+import { MatrixObject } from './dummyObject';
 import { computeSum } from './computeSum';
 
-export const fieldsToReplace = (dateObject: typeof dummyObj) => {
+export const fieldsToReplace = (dateObject: typeof MatrixObject) => {
   return [
     {
       name: 'day',

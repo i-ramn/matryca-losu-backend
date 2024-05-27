@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article Template</title>
+  <style>
+      .container {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+      }
+      .generalTile {
+          /*margin-top: -60px;*/
+      }
+      .number {
+          font-family: Arial, sans-serif;
+          font-size: 14px;
+          margin-bottom: 30px;
+      }
+      h1 {
+          font-family: Arial, sans-serif;
+          font-weight: bold;
+          font-size: 22px;
+      }
+      h2 {
+          font-family: Arial, sans-serif;
+          font-size: 16px;
+          font-weight: bold;
+      }
+      h3 {
+          font-family: Arial, sans-serif;
+          font-size: 16px;
+          font-weight: normal;
+          margin-bottom: 7px;
+      }
+      p {
+          margin-top: 0;
+      }
+      body {
+          margin-top: 0;
+      }
+      html {
+          font-size: 12px;
+      }
+  </style>
+</head>
+<body class="container">
+{compMatrix}
+<div>
+  <h1 class="generalTile">CHARAKTERYSTYKA PARY</h1>
+  <h3>
+    STREFA KOMFORTU PARY
+  </h3>
+  <p class="number">({areaNumber})</p>
+  <p>{areaContent}</p>
+  <h3>
+    ZACHOWANIE MĘŻCZYZNY
+  </h3>
+  <p class="number">({manBehaviourNumber})</p>
+  <p>{manBehaviourContent}</p>
+  <h3>
+    ZACHOWANIE KOBIETY
+  </h3>
+  <p class="number">({womanBehaviourNumber})</p>
+  <p>{womanBehaviourContent}</p>
+  <h3>
+    CZEGO BRAKUJE W CHARAKTERZE MĘŻCZYZNY
+  </h3>
+  <p class="number">({missingAsAManNumber})</p>
+  <p>{missingAsAManContent}</p>
+  <h3>
+    CZEGO BRAKUJE W CHARAKTERZE KOBIETY
+  </h3>
+  <p class="number">({missingAsAWomanNumber})</p>
+  <p>{missingAsAWomanContent}</p>
+  <h3>
+    JAK LUDZIE WAS WIDZĄ
+  </h3>
+  <p class="number">({howPeopleSeeNumber})</p>
+  <p>{howPeopleSeeContent}</p>
+  <h3>
+    KIM BYLIŚCIE DLA SIEBIE W POPRZEDNIM ŻYCIU
+  </h3>
+  <p class="number">({whereInPreviousLifeNumber})</p>
+  <p>{whereInPreviousLifeContent}</p>
+</div>
+
+<div>
+  <h1>ZASOBY PARY</h1>
+  <h3>
+    RELACJE PARY
+  </h3>
+  <p class="number">({relationsNumber})</p>
+  <p>{relationsContent}</p>
+  <h3>
+    PO CO SIĘ SPOTKALIŚCIE
+  </h3>
+  <p class="number">({whyMeetNumber})</p>
+  <p>{whyMeetContent}</p>
+  <p class="number">({whyMeet2Number})</p>
+  <p>{whyMeet2Content}</p>
+  <h3>
+    JAK PARA SIĘ MANIFESTUJE
+  </h3>
+  <p class="number">({howCoupleManifestNumber})</p>
+  <p>{howCoupleManifestContent}</p>
+  <p class="number">({howCoupleManifest2Number})</p>
+  <p>{howCoupleManifest2Content}</p>
+  <p class="number">({howCoupleManifest3Number})</p>
+  <p>{howCoupleManifest3Content}</p>
+  <h3>
+    CO INSPIRUJE PARĘ
+  </h3>
+  <p class="number">({inspirationNumber})</p>
+  <p>{inspirationContent}</p>
+  <h3>
+    JAK PARA BĘDZIE PROWADZIĆ GOSPODARSTWO DOMOWE
+  </h3>
+  <p class="number">({houseHoldNumber})</p>
+  <p>{houseHoldContent}</p>
+</div>
+
+<div>
+  <h1>FINANSE</h1>
+  <h3>
+    CO ROBIĆ WSPÓLNIE, ABY BYŁY PIENIĄDZE
+  </h3>
+  <p class="number">({howToMakeMoneyNumber})</p>
+  <p>{howToMakeMoneyContent}</p>
+  <h3>
+    SŁABE PUNKTY W FINANSACH
+  </h3>
+  <p class="number">({financeWeaknessNumber})</p>
+  <p>{financeWeaknessContent}</p>
+  <p class="number">({financeWeakness2Number})</p>
+  <p>{financeWeakness2Content}</p>
+  <p class="number">({financeWeakness3Number})</p>
+  <p>{financeWeakness3Content}</p>
+</div>
+
+<div>
+  <h1>MOŻLIWE PROBLEMY</h1>
+  <h3>
+    PROBLEMY I TRUDNOŚCI
+  </h3>
+  <p class="number">({problemsNumber})</p>
+  <p>{problemsContent}</p>
+  <p class="number">({problems2Number})</p>
+  <p>{problems2Content}</p>
+  <p class="number">({problems3Number})</p>
+  <p>{problems3Content}</p>
+  <p class="number">({problems4Number})</p>
+  <p>{problems4Content}</p>
+  <p class="number">({problems5Number})</p>
+  <p>{problems5Content}</p>
+  <p class="number">({problems6Number})</p>
+  <p>{problems6Content}</p>
+  <h3>
+    CZEGO BRAKUJE PARZE
+  </h3>
+  <p class="number">({whatIsMissingNumber})</p>
+  <p>{whatIsMissingContent}</p>
+
+  <h3>
+    CO POWODUJE PROBLEMY
+  </h3>
+  <p class="number">({whatCausesProblemsNumber})</p>
+  <p>{whatCausesProblemsContent}</p>
+  <p class="number">({whatCausesProblems2Number})</p>
+  <p>{whatCausesProblems2Content}</p>
+  <p class="number">({whatCausesProblems3Number})</p>
+  <p>{whatCausesProblems3Content}</p>
+  <p class="number">({whatCausesProblems4Number})</p>
+  <p>{whatCausesProblems4Content}</p>
+  <h3>
+    MOŻLIWA PRZYCZYNA ROZSTANIA
+  </h3>
+  <p class="number">({separationNumber})</p>
+  <p>{separationContent}</p>
+  <h3>JEŚLI PARA NIE SPEŁNIA TEGO, DO CZEGO SIĘ SPOTKAŁA, WŁĄCZA SIĘ NEGATYWNA KARMA </h3>
+  <p class="number">({negativeKarmaNumber})</p>
+  <p>{negativeKarmaContent}</p>
+  <p class="number">({negativeKarma2Number})</p>
+  <p>{negativeKarma2Content}</p>
+  <p class="number">({negativeKarma3Number})</p>
+  <p>{negativeKarma3Content}</p>
+</div>
+
+<div>
+  <h1>ZADANIA</h1>
+  <h3>
+    ZADANIA PARY DLA "DOPASOWANIA" W RELACJACH
+  </h3>
+  <p class="number">({matchingTaskNumber})</p>
+  <p>{matchingTaskContent}</p>
+  <h3>
+    ZADANIA PARY DO SKUTECZNEJ REALIZACJI W SPOŁECZEŃSTWIE 24
+  </h3>
+  <p class="number">({implementationTaskNumber})</p>
+  <p>{implementationTaskContent}</p>
+</div>
+
+<div>
+  <h1>RODZINA</h1>
+  <h3>
+    WASZE DZIECI
+  </h3>
+  <p class="number">({childrenNumber})</p>
+  <p>{childrenContent}</p>
+  <h3>
+    WY JAKO RODZICE
+  </h3>
+  <p class="number">({parentsNumber})</p>
+  <p>{parentsContent}</p>
+</div>
+
+<div>
+  <h1>REKOMENDACJE</h1>
+  <h3>
+    DLA FINANSOWEGO DOBROBYTU I SZCZĘŚLIWYCH RELACJI WAŻNE JEST
+  </h3>
+  <p class="number">({financeRecommendationNumber})</p>
+  <p>{financeRecommendationContent}</p>
+  <p class="number">({financeRecommendation2Number})</p>
+  <p>{financeRecommendation2Content}</p>
+  <p class="number">({financeRecommendation3Number})</p>
+  <p>{financeRecommendation3Content}</p>
+  <p class="number">({financeRecommendation4Number})</p>
+  <p>{financeRecommendation4Content}</p>
+  <p class="number">({financeRecommendation5Number})</p>
+  <p>{financeRecommendation5Content}</p>
+  <h3>
+    REKOMENDACJE DLA PARY
+  </h3>
+  <p class="number">({coupleRecommendationNumber})</p>
+  <p>{coupleRecommendationContent}</p>
+  <p class="number">({coupleRecommendation2Number})</p>
+  <p>{coupleRecommendation2Content}</p>
+  <p class="number">({coupleRecommendation3Number})</p>
+  <p>{coupleRecommendation3Content}</p>
+</div>
+
+</body>
+</html>

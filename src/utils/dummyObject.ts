@@ -1,4 +1,4 @@
-export const dummyObj = {
+export const MatrixObject = {
   a: 6,
   a1: 20,
   a2: 14,
@@ -128,4 +128,31 @@ export const dummyObj = {
   pe2: 6,
   pf: 8,
   ps: 1,
+};
+
+export const compatibilityObject = {
+  a: 10,
+  a1: 6,
+  a2: 14,
+  b: 9,
+  b1: 22,
+  b2: 13,
+  c: 10,
+  c1: 6,
+  c2: 14,
+  d: 11,
+  d1: 8,
+  d2: 15,
+  e: 4,
+  f: 19,
+  g: 19,
+  h: 21,
+  i: 21,
+  x: 8,
+  x1: 11,
+  x2: 7,
+  j: 1,
+  j1: 1,
+  j2: 1,
+  j3: 1,
 };

@@ -1,6 +1,6 @@
 import * as puppeteer from 'puppeteer';
 
-export const generatePdf = async (htmlContent: string) => {
+export const generatePdf = async (htmlContent: string, folderName?: string) => {
   try {
     const browser = await puppeteer.launch({
       headless: 'new',
@@ -15,7 +15,7 @@ export const generatePdf = async (htmlContent: string) => {
 
     // Generate PDF
     await page.pdf({
-      path: './src/assets/output.pdf',
+      path: `./src/assets/${folderName}.pdf` ?? './src/assets/output.pdf',
       format: 'A4',
       printBackground: true,
       margin: {

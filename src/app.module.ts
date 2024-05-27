@@ -6,6 +6,7 @@ import { SequelizeModule } from '@nestjs/sequelize';
 import { ArticlesModule } from './articles/articles.module';
 import { ConfigModule } from '@nestjs/config';
 import { Articles } from './articles/articles.model';
+import { CompatibilityArticles } from './articles/compatibility-articles.model';
 
 @Module({
   imports: [
@@ -21,7 +22,7 @@ import { Articles } from './articles/articles.model';
       database: process.env.POSTGRES_DATABASE,
       synchronize: true,
       autoLoadModels: true,
-      models: [Articles],
+      models: [Articles, CompatibilityArticles],
     }),
     CalculatorModule,
     ArticlesModule,

@@ -1,4 +1,4 @@
-import { Controller, Get, Redirect, Query, Res } from '@nestjs/common';
+import { Controller, Get, Redirect, Query, Res, Param } from '@nestjs/common';
 import { Response } from 'express';
 import { ArticlesService } from './articles.service';
 import { TokenService } from './token.service';
@@ -26,13 +26,18 @@ export class ArticlesController {
     res.send('success');
   }
 
-  // @Get('/:folderId')
-  // async getDocumentById(@Param('folderId') folderId: string) {
-  //   await this.googleDriveService.generateObjectFromFolders(folderId);
-  // }
+  @Get('folders/:folderId')
+  async getDocumentById(@Param('folderId') folderId: string) {
+    return this.googleDriveService.generateObjectFromFolders(folderId);
+  }
 
-  @Get('read')
+  @Get('read/matryca')
   async readDocumentById() {
-    return await this.googleDriveService.saveDataFromJson();
+    return await this.googleDriveService.parseMatryca();
+  }
+
+  @Get('read/compatibility')
+  async readCompatibilityDocumentById() {
+    return await this.googleDriveService.parseCompatibilityMatryca();
   }
 }
