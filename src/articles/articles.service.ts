@@ -7,6 +7,7 @@ import * as fs from 'fs';
 import { InjectModel } from '@nestjs/sequelize';
 import { Articles } from './articles.model';
 import { CompatibilityArticles } from './compatibility-articles.model';
+import { ChildrenArticles } from './children-articles.model';
 
 config();
 
@@ -24,6 +25,8 @@ export class ArticlesService {
     private readonly articlesModel: typeof Articles,
     @InjectModel(CompatibilityArticles)
     private readonly compatibilityArticlesModel: typeof CompatibilityArticles,
+    @InjectModel(ChildrenArticles)
+    private readonly childrenArticlesModel: typeof ChildrenArticles,
   ) {
     this.drive = google.drive({
       version: 'v3',
@@ -139,6 +142,7 @@ export class ArticlesService {
   async parseMatryca() {
     const jsonData = fs.readFileSync('./src/assets/folder.json', 'utf-8');
     const data = JSON.parse(jsonData);
+
     return await this.saveDataFromJson(data, this.articlesModel);
   }
 
@@ -148,7 +152,15 @@ export class ArticlesService {
       'utf-8',
     );
     const data = JSON.parse(jsonData);
+
     return await this.saveDataFromJson(data, this.compatibilityArticlesModel);
+  }
+
+  async parseChildrenMatryca() {
+    const jsonData = fs.readFileSync('./src/assets/children.json', 'utf-8');
+    const data = JSON.parse(jsonData);
+
+    return await this.saveDataFromJson(data, this.childrenArticlesModel);
   }
 
   // async generateHtmlFromJson(data: FileStructure): Promise<string> {

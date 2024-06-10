@@ -7,6 +7,7 @@ import { ArticlesModule } from './articles/articles.module';
 import { ConfigModule } from '@nestjs/config';
 import { Articles } from './articles/articles.model';
 import { CompatibilityArticles } from './articles/compatibility-articles.model';
+import { ChildrenArticles } from './articles/children-articles.model';
 
 @Module({
   imports: [
@@ -22,7 +23,7 @@ import { CompatibilityArticles } from './articles/compatibility-articles.model';
       database: process.env.POSTGRES_DATABASE,
       synchronize: true,
       autoLoadModels: true,
-      models: [Articles, CompatibilityArticles],
+      models: [Articles, CompatibilityArticles, ChildrenArticles],
     }),
     CalculatorModule,
     ArticlesModule,

@@ -40,4 +40,9 @@ export class ArticlesController {
   async readCompatibilityDocumentById() {
     return await this.googleDriveService.parseCompatibilityMatryca();
   }
+
+  @Get('read/children')
+  async readChildrenDocumentById() {
+    return await this.googleDriveService.parseChildrenMatryca();
+  }
 }

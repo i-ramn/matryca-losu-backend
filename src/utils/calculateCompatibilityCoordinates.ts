@@ -1,25 +1,57 @@
 import { computeSum } from './computeSum';
 
-export const calculatedComp = (date1: string, date2: string) => {
-  const [day1, month1, year1] = date1
-    .split('.')
-    .map(Number)
-    .map((el) => computeSum(el));
+interface CalculatedCompProps {
+  date1: string;
+  date2: string;
+  firstD: number;
+  secondD: number;
+  firstE: number;
+  secondE: number;
+  firstF: number;
+  secondF: number;
+  firstG: number;
+  secondG: number;
+  firstH: number;
+  secondH: number;
+  firstI: number;
+  secondI: number;
+  firstA: number;
+  secondA: number;
+  firstB: number;
+  secondB: number;
+  firstC: number;
+  secondC: number;
+}
 
-  const [day2, month2, year2] = date2
-    .split('.')
-    .map(Number)
-    .map((el) => computeSum(el));
-
-  const one = computeSum(day1 + day2);
-  const two = computeSum(month1 + month2);
-  const three = computeSum(year1 + year2);
-  const four = computeSum(one + two + three);
-  const five = computeSum(one + two + three + four);
-  const six = computeSum(one + two);
-  const seven = computeSum(two + three);
-  const eight = computeSum(three + four);
-  const nine = computeSum(one + four);
+export const calculatedComp = ({
+  firstD,
+  secondD,
+  firstE,
+  secondE,
+  firstF,
+  secondF,
+  firstG,
+  secondG,
+  firstH,
+  secondH,
+  firstI,
+  secondI,
+  firstA,
+  secondA,
+  firstB,
+  secondB,
+  firstC,
+  secondC,
+}: CalculatedCompProps) => {
+  const one = computeSum(firstA + secondA);
+  const two = computeSum(firstB + secondB);
+  const three = computeSum(firstC + secondC);
+  const four = computeSum(firstD + secondD);
+  const five = computeSum(firstE + secondE);
+  const six = computeSum(firstF + secondF);
+  const seven = computeSum(firstG + secondG);
+  const eight = computeSum(firstH + secondH);
+  const nine = computeSum(firstI + secondI);
   const ten = computeSum(one + five);
   const eleven = computeSum(one + ten);
 
@@ -33,8 +65,11 @@ export const calculatedComp = (date1: string, date2: string) => {
   const nineteen = computeSum(fourteen + eighteen);
   const twenty = computeSum(sixteen + eighteen);
   const twentyOne = computeSum(nine + seven);
+  const _twentyOne = computeSum(two + four);
   const twentyTwo = computeSum(six + eight);
+  const _twentyTwo = computeSum(one + three);
   const twentyThree = computeSum(seven + nine);
+  const _twentyThree = computeSum(_twentyOne + _twentyTwo);
   const twentyFour = computeSum(twentyTwo + twentyThree);
   const twentyFive = computeSum(twentyOne + twentyFour);
 
@@ -54,13 +89,15 @@ export const calculatedComp = (date1: string, date2: string) => {
     e: five,
     f: six,
     g: seven,
+    gc: _twentyOne,
     h: eight,
     i: nine,
+    ic: _twentyTwo,
     x: twenty,
     x1: eighteen,
     x2: nineteen,
     j: twentyFive,
-    j1: twentyOne,
+    j1: _twentyThree,
     j2: twentyFour,
     j3: twentyTwo,
     j4: twentyThree,

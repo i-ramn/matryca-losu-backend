@@ -10,6 +10,11 @@ export class CalculatorController {
     return this.calculateService.fillHtmlTemplateWithDataFromDatabase(date);
   }
 
+  @Get('children/:date')
+  calculateChildren(@Param('date') date: string) {
+    return this.calculateService.fillChildrenTemplate(date);
+  }
+
   @Get('compatibility')
   calculateCompatibility(
     @Query('date1') date1: string,
