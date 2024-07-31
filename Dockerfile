@@ -1,16 +1,22 @@
+# Use an appropriate base image for ARM64
 FROM node:21.5.0
 
+# Install dependencies
 RUN apt-get update && apt-get install -y wget gnupg ca-certificates
 
-RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \
-    && sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list' \
-    && apt-get update \
-    && apt-get install -y google-chrome-stable
+# Add Chromium source and install Chromium for ARM64
+RUN apt-get update && apt-get install -y chromium
+
+# Set environment variable to use the installed Chromium
+ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium
 
 WORKDIR /app
 
+# Copy application files
 COPY . .
 
+# Install node modules
 RUN npm install
 
+# Start the application
 CMD ["npm", "run", "start:dev"]

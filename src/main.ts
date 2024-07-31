@@ -10,7 +10,7 @@ async function bootstrap() {
   app.useStaticAssets(join(__dirname, '..', 'src', 'public'));
 
   app.use(cors());
-  await app.listen(5000);
+  await app.listen(5001);
 }
 
 bootstrap();
