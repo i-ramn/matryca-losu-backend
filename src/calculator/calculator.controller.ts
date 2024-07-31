@@ -1,9 +1,13 @@
 import { CalculatorService } from './calculator.service';
 import { Controller, Get, Param, Query } from '@nestjs/common';
+import { YearsService } from './years.service';
 
 @Controller('calculate')
 export class CalculatorController {
-  constructor(private readonly calculateService: CalculatorService) {}
+  constructor(
+    private readonly calculateService: CalculatorService,
+    private readonly yearService: YearsService,
+  ) {}
 
   @Get('date/:date')
   calculator(@Param('date') date: string) {
@@ -21,5 +25,10 @@ export class CalculatorController {
     @Query('date2') date2: string,
   ) {
     return this.calculateService.fillHtmlCompatibilityTemplate(date1, date2);
+  }
+
+  @Get('year/:date')
+  calculateYear(@Param('date') date: string) {
+    return this.yearService.fillHtmlYearsTemplate(date);
   }
 }

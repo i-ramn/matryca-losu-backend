@@ -1,6 +1,10 @@
 import * as puppeteer from 'puppeteer';
 
-export const generatePdf = async (htmlContent: string, folderName?: string) => {
+export const generatePdf = async (
+  htmlContent: string,
+  folderName?: string,
+  withoutImage?: boolean,
+) => {
   try {
     const browser = await puppeteer.launch({
       headless: 'new',
@@ -10,8 +14,10 @@ export const generatePdf = async (htmlContent: string, folderName?: string) => {
     const page = await browser.newPage();
     await page.setContent(htmlContent);
 
+    if (!withoutImage) {
+      await page.waitForSelector('.image');
+    }
     // Дождаться загрузки изображения с классом "image"
-    await page.waitForSelector('.image');
 
     // Generate PDF
     await page.pdf({
